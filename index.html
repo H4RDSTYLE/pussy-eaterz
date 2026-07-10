@@ -20,7 +20,7 @@
       <li><a href="#sorpresa">Sorpresa ✦</a></li>
       <li><a href="#manifiesto">Manifiesto</a></li>
     </ul>
-    <button class="nav__cta">Carrito (0)</button>
+    <button class="nav__cta" id="navCta">Carrito (0)</button>
   </nav>
 
   <!-- HERO -->
@@ -50,58 +50,215 @@
       <p class="section-sub">Cada tanga cuenta una historia. ¿Cuál es la tuya?</p>
       <div class="colecciones__grid">
 
+        <!-- TAROT -->
         <article class="card card--tarot">
           <div class="card__badge">Mística</div>
-          <div class="card__emoji">🔮</div>
+          <div class="card__tanga">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <defs>
+                <pattern id="lace-tarot" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+                  <circle cx="12" cy="12" r="4" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                  <circle cx="0"  cy="0"  r="2" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width=".7"/>
+                  <circle cx="24" cy="0"  r="2" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width=".7"/>
+                  <circle cx="0"  cy="24" r="2" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width=".7"/>
+                  <circle cx="24" cy="24" r="2" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width=".7"/>
+                </pattern>
+                <clipPath id="clip-tarot">
+                  <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z
+                           M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z
+                           M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z
+                           M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z"/>
+                </clipPath>
+              </defs>
+              <!-- base -->
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#6c3483"/>
+              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#6c3483"/>
+              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#6c3483"/>
+              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#6c3483"/>
+              <!-- lace overlay on band -->
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="url(#lace-tarot)"/>
+              <!-- stars -->
+              <text x="200" y="165" text-anchor="middle" font-size="38" opacity=".9">☽</text>
+              <text x="120" y="148" text-anchor="middle" font-size="16" opacity=".6">✦</text>
+              <text x="280" y="148" text-anchor="middle" font-size="16" opacity=".6">✦</text>
+              <text x="200" y="260" text-anchor="middle" font-size="18" opacity=".85">★</text>
+              <!-- outline -->
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+            </svg>
+          </div>
           <h3>Tarot</h3>
           <p>La Emperatriz, La Luna, La Torre... en tu ropa interior. El universo te lo dice con seda y encaje.</p>
           <span class="card__price">desde 18€</span>
-          <button class="btn btn--small btn--primary">Ver tanga</button>
+          <button class="btn btn--small btn--primary" data-tema="tarot">Customizar</button>
         </article>
 
+        <!-- HAALAND -->
         <article class="card card--haaland">
           <div class="card__badge">Fan Edition</div>
-          <div class="card__emoji">⚽</div>
+          <div class="card__tanga">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <defs>
+                <pattern id="hex-haaland" x="0" y="0" width="30" height="26" patternUnits="userSpaceOnUse">
+                  <polygon points="15,1 28,8 28,18 15,25 2,18 2,8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#1e3a5f"/>
+              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#1e3a5f"/>
+              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#1e3a5f"/>
+              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#1e3a5f"/>
+              <!-- hex pattern -->
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="url(#hex-haaland)"/>
+              <!-- #9 -->
+              <text x="200" y="185" text-anchor="middle" font-family="Georgia,serif" font-size="72" font-weight="bold" fill="rgba(255,255,255,0.12)">9</text>
+              <text x="200" y="175" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="bold" fill="rgba(255,255,255,0.7)">9</text>
+              <text x="200" y="262" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.6)">⚽</text>
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+            </svg>
+          </div>
           <h3>Haaland</h3>
           <p>Para las que marcan tantos como él pero con más estilo. Edición limitada. Gol asegurado.</p>
           <span class="card__price">desde 22€</span>
-          <button class="btn btn--small btn--primary">Ver tanga</button>
+          <button class="btn btn--small btn--primary" data-tema="haaland">Customizar</button>
         </article>
 
+        <!-- GUÍA -->
         <article class="card card--guia">
           <div class="card__badge">Educativo</div>
-          <div class="card__emoji">📖</div>
+          <div class="card__tanga">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#c0392b"/>
+              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#c0392b"/>
+              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#c0392b"/>
+              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#c0392b"/>
+              <!-- text lines -->
+              <text x="200" y="68" text-anchor="middle" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">INSTRUCCIONES DE USO ✦</text>
+              <!-- arrow -->
+              <text x="200" y="155" text-anchor="middle" font-size="48" fill="rgba(255,255,255,0.8)">↓</text>
+              <text x="200" y="208" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.65)">RTFM</text>
+              <text x="200" y="262" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.75)">📖</text>
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+            </svg>
+          </div>
           <h3>Guía Comer Coños</h3>
           <p>Porque la educación empieza por abajo. Instrucciones ilustradas. Para llevar en el cuerpo y en la mente.</p>
           <span class="card__price">desde 20€</span>
-          <button class="btn btn--small btn--primary">Ver tanga</button>
+          <button class="btn btn--small btn--primary" data-tema="guia">Customizar</button>
         </article>
 
+        <!-- HORÓSCOPO -->
         <article class="card card--horoscopo">
           <div class="card__badge">Astral</div>
-          <div class="card__emoji">♈</div>
+          <div class="card__tanga">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <defs>
+                <radialGradient id="grad-horo" cx="50%" cy="50%" r="60%">
+                  <stop offset="0%" stop-color="#1a0533"/>
+                  <stop offset="100%" stop-color="#0d0020"/>
+                </radialGradient>
+              </defs>
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#0d0020"/>
+              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#0d0020"/>
+              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#0d0020"/>
+              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#0d0020"/>
+              <!-- constellation dots -->
+              <circle cx="100" cy="130" r="2" fill="#d4af37" opacity=".8"/>
+              <circle cx="145" cy="110" r="1.5" fill="#d4af37" opacity=".7"/>
+              <circle cx="170" cy="140" r="2.5" fill="#d4af37" opacity=".9"/>
+              <line x1="100" y1="130" x2="145" y2="110" stroke="#d4af37" stroke-width=".7" opacity=".4"/>
+              <line x1="145" y1="110" x2="170" y2="140" stroke="#d4af37" stroke-width=".7" opacity=".4"/>
+              <circle cx="300" cy="125" r="2" fill="#d4af37" opacity=".8"/>
+              <circle cx="255" cy="108" r="1.5" fill="#d4af37" opacity=".7"/>
+              <circle cx="230" cy="138" r="2.5" fill="#d4af37" opacity=".9"/>
+              <line x1="300" y1="125" x2="255" y2="108" stroke="#d4af37" stroke-width=".7" opacity=".4"/>
+              <line x1="255" y1="108" x2="230" y2="138" stroke="#d4af37" stroke-width=".7" opacity=".4"/>
+              <!-- zodiac center -->
+              <text x="200" y="175" text-anchor="middle" font-size="40" fill="#d4af37" opacity=".9">♎</text>
+              <text x="200" y="64" text-anchor="middle" font-family="serif" font-size="9" fill="#d4af37" opacity=".6" letter-spacing="3">✦ ♈ ♉ ♊ ♋ ♌ ♍ ✦</text>
+              <text x="200" y="262" text-anchor="middle" font-size="12" fill="#d4af37" opacity=".7">✦</text>
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="1.5"/>
+            </svg>
+          </div>
           <h3>Horóscopo</h3>
           <p>12 signos, 12 tangas. Virgo bordado en plata, Escorpio en rojo sangre. El cosmos ya sabe lo que llevas puesto.</p>
           <span class="card__price">desde 19€</span>
-          <button class="btn btn--small btn--primary">Ver tanga</button>
+          <button class="btn btn--small btn--primary" data-tema="horoscopo">Customizar</button>
         </article>
 
+        <!-- SETAS -->
         <article class="card card--setas">
           <div class="card__badge">Psicodélico</div>
-          <div class="card__emoji">🍄</div>
+          <div class="card__tanga">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#1e5c34"/>
+              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#1e5c34"/>
+              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#1e5c34"/>
+              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#1e5c34"/>
+              <!-- polka dots like amanita -->
+              <circle cx="80"  cy="120" r="5" fill="rgba(255,255,255,0.35)"/>
+              <circle cx="130" cy="105" r="4" fill="rgba(255,255,255,0.3)"/>
+              <circle cx="110" cy="150" r="3" fill="rgba(255,255,255,0.25)"/>
+              <circle cx="290" cy="118" r="5" fill="rgba(255,255,255,0.35)"/>
+              <circle cx="248" cy="108" r="4" fill="rgba(255,255,255,0.3)"/>
+              <circle cx="310" cy="155" r="3" fill="rgba(255,255,255,0.25)"/>
+              <!-- mushroom center -->
+              <ellipse cx="200" cy="150" rx="28" ry="18" fill="#e74c3c" opacity=".85"/>
+              <circle cx="191" cy="144" r="4.5" fill="rgba(255,255,255,0.6)"/>
+              <circle cx="208" cy="141" r="3" fill="rgba(255,255,255,0.5)"/>
+              <circle cx="200" cy="154" r="3.5" fill="rgba(255,255,255,0.5)"/>
+              <rect x="195" y="168" width="10" height="22" rx="3" fill="#c8a97e" opacity=".9"/>
+              <text x="200" y="263" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.7)">🍄</text>
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+            </svg>
+          </div>
           <h3>Setas Mágicas</h3>
           <p>Amanita muscaria, seta ostra, trufa negra... botánica y picardía en un solo tejido. Fly, baby.</p>
           <span class="card__price">desde 19€</span>
-          <button class="btn btn--small btn--primary">Ver tanga</button>
+          <button class="btn btn--small btn--primary" data-tema="setas">Customizar</button>
         </article>
 
+        <!-- LOLA FLORES -->
         <article class="card card--lola">
           <div class="card__badge">Olé</div>
-          <div class="card__emoji">🌹</div>
+          <div class="card__tanga">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <defs>
+                <pattern id="lunares" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+                  <circle cx="14" cy="14" r="5" fill="rgba(0,0,0,0.25)"/>
+                </pattern>
+              </defs>
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#e63946"/>
+              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#e63946"/>
+              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#e63946"/>
+              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#e63946"/>
+              <!-- lunares -->
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="url(#lunares)"/>
+              <!-- rose center -->
+              <text x="200" y="175" text-anchor="middle" font-size="42">🌹</text>
+              <!-- mantilla fringe on band -->
+              <line x1="30" y1="88" x2="30" y2="100" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="52" y1="84" x2="52" y2="96" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="74" y1="81" x2="74" y2="93" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="96" y1="79" x2="96" y2="91" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="118" y1="77" x2="118" y2="89" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="140" y1="75" x2="140" y2="87" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="162" y1="74" x2="162" y2="86" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="184" y1="73" x2="184" y2="85" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="200" y1="73" x2="200" y2="85" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="216" y1="73" x2="216" y2="85" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="238" y1="74" x2="238" y2="86" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="260" y1="75" x2="260" y2="87" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="282" y1="77" x2="282" y2="89" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="304" y1="79" x2="304" y2="91" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="326" y1="81" x2="326" y2="93" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="348" y1="84" x2="348" y2="96" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <line x1="370" y1="88" x2="370" y2="100" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+            </svg>
+          </div>
           <h3>Lola Flores</h3>
           <p>La Faraona en tu cuerpo. Lunares, claveles, flecos y duende. Porque eres arte, no producto.</p>
           <span class="card__price">desde 21€</span>
-          <button class="btn btn--small btn--primary">Ver tanga</button>
+          <button class="btn btn--small btn--primary" data-tema="lola">Customizar</button>
         </article>
 
       </div>
@@ -140,29 +297,164 @@
 
       <div class="custom__wrapper">
 
-        <!-- PREVIEW -->
+        <!-- SVG PREVIEW -->
         <div class="custom__preview">
-          <div class="custom__canvas" id="previewCanvas">
-            <div class="tanga-shape" id="tangaShape">
-              <div class="tanga-front" id="tangaFront">
-                <div class="tanga-patch" id="tangaPatch"></div>
-                <img class="tanga-user-img" id="tangaUserImg" src="" alt="" style="display:none" />
-              </div>
-            </div>
+          <div class="custom__stage">
+            <div class="custom__stage-label">VISTA PREVIA</div>
+            <svg id="tangaSVG" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <!-- Lace pattern waistband -->
+                <pattern id="laceWB" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+                  <circle cx="11" cy="11" r="3.5" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width=".9"/>
+                  <circle cx="0"  cy="0"  r="1.8" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width=".6"/>
+                  <circle cx="22" cy="0"  r="1.8" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width=".6"/>
+                  <circle cx="0"  cy="22" r="1.8" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width=".6"/>
+                  <circle cx="22" cy="22" r="1.8" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width=".6"/>
+                  <line x1="0" y1="11" x2="22" y2="11" stroke="rgba(255,255,255,0.07)" stroke-width=".4"/>
+                  <line x1="11" y1="0" x2="11" y2="22" stroke="rgba(255,255,255,0.07)" stroke-width=".4"/>
+                </pattern>
+
+                <!-- Fabric texture - subtle noise -->
+                <filter id="fabric">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+                  <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+                  <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blended"/>
+                  <feComposite in="blended" in2="SourceGraphic" operator="in"/>
+                </filter>
+
+                <!-- Highlight gradient -->
+                <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%"   stop-color="rgba(255,255,255,0.18)"/>
+                  <stop offset="50%"  stop-color="rgba(255,255,255,0)"/>
+                  <stop offset="100%" stop-color="rgba(0,0,0,0.1)"/>
+                </linearGradient>
+
+                <!-- Clip paths for the three models -->
+                <clipPath id="clipClasico">
+                  <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z
+                           M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z
+                           M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z
+                           M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z"/>
+                </clipPath>
+                <clipPath id="clipFino">
+                  <path d="M 60,62 Q 200,46 340,62 L 335,86 Q 200,72 65,86 Z
+                           M 65,86 Q 90,168 183,252 L 192,246 Q 72,162 80,84 Z
+                           M 335,86 Q 310,168 217,252 L 208,246 Q 328,162 320,84 Z
+                           M 183,252 Q 200,280 217,252 Q 200,240 183,252 Z"/>
+                </clipPath>
+                <clipPath id="clipBrasileno">
+                  <path d="M 5,55 Q 200,30 395,55 L 390,92 Q 200,70 10,92 Z
+                           M 10,92 Q 40,180 158,262 L 180,254 Q 56,172 30,88 Z
+                           M 390,92 Q 360,180 242,262 L 220,254 Q 344,172 370,88 Z
+                           M 158,262 Q 200,300 242,262 Q 200,240 158,262 Z"/>
+                </clipPath>
+
+                <!-- User image clip (clasico default) -->
+                <clipPath id="clipUserImg">
+                  <path id="userImgClipPath" d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z"/>
+                </clipPath>
+              </defs>
+
+              <!-- ====== TANGA BODY ====== -->
+              <!-- Waistband -->
+              <path id="svgWaistband" class="tanga-part" d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#F9C5D1"/>
+              <!-- Left strap -->
+              <path id="svgLeftStrap" class="tanga-part" d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#F9C5D1"/>
+              <!-- Right strap -->
+              <path id="svgRightStrap" class="tanga-part" d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#F9C5D1"/>
+              <!-- Front panel -->
+              <path id="svgPanel" class="tanga-part" d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#F9C5D1"/>
+
+              <!-- Lace overlay on waistband only -->
+              <path id="svgLaceWB" d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="url(#laceWB)"/>
+
+              <!-- Shine highlight -->
+              <path id="svgShineL" d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="url(#shineGrad)" opacity=".5"/>
+              <path id="svgShineR" d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="url(#shineGrad)" opacity=".3"/>
+
+              <!-- User uploaded image -->
+              <image id="svgUserImg" x="0" y="0" width="400" height="300"
+                     clip-path="url(#clipUserImg)"
+                     preserveAspectRatio="xMidYMid slice"
+                     href="" style="display:none; opacity:0.65"/>
+
+              <!-- Theme decoration layer -->
+              <g id="svgTheme">
+                <!-- populated by JS -->
+              </g>
+
+              <!-- Embroidered text -->
+              <text id="svgEmbText"
+                    x="200" y="200"
+                    text-anchor="middle"
+                    font-family="'Playfair Display', Georgia, serif"
+                    font-size="18"
+                    font-style="italic"
+                    fill="rgba(255,255,255,0.9)"
+                    filter="drop-shadow(0 1px 2px rgba(0,0,0,0.4))"
+                    style="display:none"></text>
+
+              <!-- Seam/outline -->
+              <path id="svgOutlineWB" d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z"
+                    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
+              <path id="svgOutlineL"  d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z"
+                    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
+              <path id="svgOutlineR"  d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z"
+                    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
+              <path id="svgOutlineP"  d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z"
+                    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
+
+              <!-- Elastic stitching on waistband top -->
+              <path id="svgStitch" d="M 18,62 Q 200,43 382,62"
+                    fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"
+                    stroke-dasharray="4 3"/>
+            </svg>
+
+            <!-- Model silhouette hint -->
+            <div class="custom__model-tag" id="modelTag">Clásico</div>
           </div>
           <p class="custom__preview-label">Vista previa en tiempo real</p>
-          <button class="btn btn--ghost btn--small" id="btnAddCart">Añadir al carrito — <span id="precioTotal">18</span>€</button>
+          <button class="btn btn--primary" id="btnAddCart">
+            Añadir al carrito — <span id="precioTotal">18</span>€
+          </button>
         </div>
 
         <!-- OPCIONES -->
         <div class="custom__options">
 
           <div class="custom__group">
-            <label>1. Elige el modelo</label>
-            <div class="option-pills" id="modeloPills">
-              <button class="pill active" data-modelo="clasico" data-precio="18">Clásico</button>
-              <button class="pill" data-modelo="tanga" data-precio="20">Tanga fino</button>
-              <button class="pill" data-modelo="brasileno" data-precio="22">Brasileño</button>
+            <label>1. Modelo</label>
+            <div class="model-cards" id="modeloPills">
+              <button class="model-card active" data-modelo="clasico" data-precio="18">
+                <svg viewBox="0 0 100 80" class="model-thumb">
+                  <path d="M4,15 Q50,8 96,15 L94,23 Q50,18 6,23 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M6,23 Q16,45 44,64 L48,62 Q17,42 11,22 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M94,23 Q84,45 56,64 L52,62 Q83,42 89,22 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M44,64 Q50,73 56,64 Q50,59 44,64 Z" fill="currentColor" opacity=".9"/>
+                </svg>
+                <span>Clásico</span>
+                <small>18€</small>
+              </button>
+              <button class="model-card" data-modelo="fino" data-precio="20">
+                <svg viewBox="0 0 100 80" class="model-thumb">
+                  <path d="M16,16 Q50,10 84,16 L83,22 Q50,17 17,22 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M17,22 Q23,44 46,63 L48,61 Q18,40 20,21 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M83,22 Q77,44 54,63 L52,61 Q82,40 80,21 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M46,63 Q50,72 54,63 Q50,59 46,63 Z" fill="currentColor" opacity=".9"/>
+                </svg>
+                <span>Tanga Fino</span>
+                <small>20€</small>
+              </button>
+              <button class="model-card" data-modelo="brasileno" data-precio="22">
+                <svg viewBox="0 0 100 80" class="model-thumb">
+                  <path d="M1,14 Q50,6 99,14 L97,24 Q50,17 3,24 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M3,24 Q10,48 40,66 L45,63 Q14,45 8,23 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M97,24 Q90,48 60,66 L55,63 Q86,45 92,23 Z" fill="currentColor" opacity=".9"/>
+                  <path d="M40,66 Q50,78 60,66 Q50,59 40,66 Z" fill="currentColor" opacity=".9"/>
+                </svg>
+                <span>Brasileño</span>
+                <small>22€</small>
+              </button>
             </div>
           </div>
 
@@ -171,11 +463,13 @@
             <div class="color-swatches" id="colorSwatches">
               <button class="swatch active" data-color="#F9C5D1" style="background:#F9C5D1" title="Rosa chicle"></button>
               <button class="swatch" data-color="#1a1a2e" style="background:#1a1a2e" title="Negro noche"></button>
-              <button class="swatch" data-color="#fff0f5" style="background:#fff0f5" title="Blanco marfil"></button>
+              <button class="swatch" data-color="#fdf5f7" style="background:#fdf5f7" title="Blanco marfil"></button>
               <button class="swatch" data-color="#c0392b" style="background:#c0392b" title="Rojo pasión"></button>
               <button class="swatch" data-color="#6c3483" style="background:#6c3483" title="Púrpura místico"></button>
-              <button class="swatch" data-color="#1e8449" style="background:#1e8449" title="Verde seta"></button>
-              <button class="swatch" data-color="#f39c12" style="background:#f39c12" title="Naranja Lola"></button>
+              <button class="swatch" data-color="#1e5c34" style="background:#1e5c34" title="Verde seta"></button>
+              <button class="swatch" data-color="#e63946" style="background:#e63946" title="Rojo Lola"></button>
+              <button class="swatch" data-color="#0d0020" style="background:#0d0020" title="Noche astral"></button>
+              <button class="swatch" data-color="#1e3a5f" style="background:#1e3a5f" title="Azul City"></button>
             </div>
           </div>
 
@@ -193,7 +487,7 @@
           </div>
 
           <div class="custom__group">
-            <label>4. Sube tu imagen o mensaje</label>
+            <label>4. Sube tu imagen</label>
             <div class="upload-area" id="uploadArea">
               <input type="file" id="imgUpload" accept="image/*" style="display:none" />
               <div class="upload-placeholder" id="uploadPlaceholder">
@@ -202,12 +496,12 @@
                 <p class="upload-hint">JPG, PNG, SVG — máx. 5MB</p>
               </div>
               <img id="uploadPreview" src="" alt="" style="display:none" />
-              <button class="btn btn--ghost btn--small" id="btnRemoveImg" style="display:none">Quitar imagen</button>
+              <button class="btn btn--ghost btn--small" id="btnRemoveImg" style="display:none">✕ Quitar imagen</button>
             </div>
           </div>
 
           <div class="custom__group">
-            <label>5. Texto bordado (opcional)</label>
+            <label>5. Texto bordado <span style="font-weight:400;color:#aaa">(opcional)</span></label>
             <input type="text" class="custom__text-input" id="textoInput" placeholder="Ej: Macarena, 🌙, Power" maxlength="20" />
             <span class="custom__char-count"><span id="charCount">0</span>/20</span>
           </div>
@@ -225,11 +519,14 @@
           </div>
 
           <div class="custom__summary">
-            <p>Modelo: <strong id="sumModelo">Clásico</strong></p>
-            <p>Color: <span id="sumColor" class="sum-color-dot" style="background:#F9C5D1"></span></p>
-            <p>Tema: <strong id="sumTema">Sin tema</strong></p>
-            <p>Talla: <strong id="sumTalla">S</strong></p>
-            <p class="sum-precio">Total: <strong><span id="sumPrecio">18</span>€</strong></p>
+            <div class="sum-row"><span>Modelo</span><strong id="sumModelo">Clásico</strong></div>
+            <div class="sum-row">
+              <span>Color</span>
+              <span class="sum-color-wrap"><span id="sumColor" class="sum-color-dot" style="background:#F9C5D1"></span></span>
+            </div>
+            <div class="sum-row"><span>Tema</span><strong id="sumTema">Sin tema</strong></div>
+            <div class="sum-row"><span>Talla</span><strong id="sumTalla">S</strong></div>
+            <div class="sum-row sum-total"><span>Total</span><strong><span id="sumPrecio">18</span>€</strong></div>
           </div>
 
         </div>
@@ -247,22 +544,10 @@
         <p><strong>Somos canallas. Somos femeninas. Somos libres. Somos Pu$$y Eaterz.</strong></p>
       </div>
       <div class="manifiesto__values">
-        <div class="value-item">
-          <span>♀</span>
-          <p>Perspectiva de género en cada costura</p>
-        </div>
-        <div class="value-item">
-          <span>♻</span>
-          <p>Tejidos sostenibles y comercio justo</p>
-        </div>
-        <div class="value-item">
-          <span>✊</span>
-          <p>Tallas reales. Todos los cuerpos. Sin filtro.</p>
-        </div>
-        <div class="value-item">
-          <span>🔥</span>
-          <p>Diseño colectivo. Tú propones, nosotras bordamos.</p>
-        </div>
+        <div class="value-item"><span>♀</span><p>Perspectiva de género en cada costura</p></div>
+        <div class="value-item"><span>♻</span><p>Tejidos sostenibles y comercio justo</p></div>
+        <div class="value-item"><span>✊</span><p>Tallas reales. Todos los cuerpos. Sin filtro.</p></div>
+        <div class="value-item"><span>🔥</span><p>Diseño colectivo. Tú propones, nosotras bordamos.</p></div>
       </div>
     </div>
   </section>
