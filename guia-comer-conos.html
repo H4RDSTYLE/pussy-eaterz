@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guía Comer Coños — PU$$Y EATERZ</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Space+Grotesk:wght@400;600;700&display=swap');
+
+    :root {
+      --red: #c0392b;
+      --dark: #1a0000;
+      --cream: #fff8f5;
+      --pink: #E91E8C;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: #1a0a0a;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    .cover {
+      text-align: center;
+      padding: 3rem 0 2rem;
+      border-bottom: 2px solid var(--red);
+      margin-bottom: 3rem;
+    }
+
+    .cover__logo {
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 1rem;
+    }
+
+    .cover__title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      font-style: italic;
+      line-height: 1.1;
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+
+    .cover__sub {
+      font-size: 1rem;
+      color: #666;
+      max-width: 480px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .cover__badge {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      padding: .35rem 1rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.25rem;
+      margin: 2.5rem 0;
+      padding: 2rem;
+      background: var(--dark);
+      border-radius: 12px;
+      color: white;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat__num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ff6b8a;
+      line-height: 1;
+      display: block;
+    }
+
+    .stat__label {
+      font-size: .8rem;
+      opacity: .75;
+      margin-top: .3rem;
+    }
+
+    .source {
+      font-size: .72rem;
+      color: #999;
+      text-align: center;
+      margin-top: .75rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.7rem;
+      color: var(--dark);
+      margin: 3rem 0 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid rgba(192,57,43,0.2);
+    }
+
+    h2 span.num {
+      color: var(--red);
+      font-style: italic;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 1.5rem 0 .5rem;
+      color: var(--red);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    p { margin-bottom: .9rem; }
+
+    ul, ol {
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    li { margin-bottom: .4rem; }
+
+    .highlight {
+      background: rgba(192,57,43,0.07);
+      border-left: 3px solid var(--red);
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.25rem 0;
+      font-style: italic;
+    }
+
+    .tip {
+      background: #fff0f5;
+      border: 1px solid rgba(233,30,140,0.2);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+
+    .tip::before {
+      content: '✦ ';
+      color: var(--pink);
+      font-style: normal;
+    }
+
+    .chapter-intro {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-note {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ddd;
+      font-size: .82rem;
+      color: #888;
+      text-align: center;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--red);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: .9rem;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    @media print {
+      body { padding: 1rem; font-size: .9rem; }
+      .back-link { display: none; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-link no-print">← Volver a PU$$Y EATERZ</a>
+
+  <div class="cover">
+    <p class="cover__logo">PU$$Y EATERZ</p>
+    <h1 class="cover__title">Guía Comer Coños</h1>
+    <p class="cover__sub">Educación sexual feminista basada en evidencia científica. Sin tabúes, sin mentiras, con datos reales.</p>
+    <span class="cover__badge">Edición Raxxeta 2026 — Descarga gratuita</span>
+  </div>
+
+  <!-- STATS -->
+  <div class="stat-row">
+    <div class="stat">
+      <span class="stat__num">8.000</span>
+      <div class="stat__label">terminaciones nerviosas en el clítoris (más que el pene entero)</div>
+    </div>
+    <div class="stat">
+      <span class="stat__num">90%</span>
+      <div class="stat__label">del clítoris es interno — solo ves la punta</div>
+    </div>
+    <div class="stat">
+      <span class="stat__num">70%</span>
+      <div class="stat__label">de personas con vulva necesita estimulación clitoral para el orgasmo</div>
+    </div>
+    <div class="stat">
+      <span class="stat__num">20.000</span>
+      <div class="stat__label">mujeres estudiadas por OMGYES para entender el placer femenino</div>
+    </div>
+  </div>
+  <p class="source">Fuentes: Scarleteen.com · OMGYES (2016, 2020) · Journal of Sex &amp; Marital Therapy · Helen O'Connell, neuroanatomía del clítoris (1998–2005)</p>
+
+  <!-- CAPÍTULO 1 -->
+  <h2><span class="num">01.</span> Comunicación: el 90% del trabajo</h2>
+  <p class="chapter-intro">Antes de tocar nada, habla. La comunicación no mata el rollo — la ausencia de comunicación sí mata el orgasmo.</p>
+
+  <p>La primera barrera para el placer femenino no es anatómica ni técnica: es cultural. Hemos crecido en un entorno donde hablar de lo que nos gusta en la cama se considera extraño, agresivo o ridículo.</p>
+
+  <div class="highlight">
+    El estudio de OMGYES identificó que la principal causa de insatisfacción no era falta de técnica, sino falta de retroalimentación: nadie preguntaba, nadie decía.
+  </div>
+
+  <h3>Cómo preguntar sin cortar el rollo</h3>
+  <ul>
+    <li>"¿Qué te gusta más?" — pregunta abierta, funciona en cualquier momento.</li>
+    <li>"¿Más rápido o más suave?" — pregunta cerrada, fácil de responder en pleno acto.</li>
+    <li>"Enséñame cómo te tocas tú" — invitación directa, no requiere palabras difíciles.</li>
+    <li>Murmullos y respiración también son respuestas: aprende a leerlas.</li>
+  </ul>
+
+  <div class="tip">Si no sabes qué le gusta a alguien, la opción correcta es siempre preguntar — no adivinar.</div>
+
+  <!-- CAPÍTULO 2 -->
+  <h2><span class="num">02.</span> Anatomía: lo que nadie te enseñó</h2>
+  <p class="chapter-intro">El clítoris no es "ese puntito". Es un órgano completo del tamaño de un pene, casi completamente interno.</p>
+
+  <h3>Estructura real del clítoris</h3>
+  <p>La neuroanatomista Helen O'Connell (1998) demostró mediante disección que el clítoris mide entre 9 y 11 cm de longitud total. Lo que vemos —el glande— es solo la punta.</p>
+
+  <ul>
+    <li><strong>Glande clitorídeo:</strong> la parte visible, altamente sensible. Cubierto por el prepucio.</li>
+    <li><strong>Cuerpo:</strong> se extiende hacia el interior, hacia el pubis.</li>
+    <li><strong>Piernas (crura):</strong> dos ramas que se abren en forma de Y, rodeando la vagina por los lados.</li>
+    <li><strong>Bulbos vestibulares:</strong> tejido eréctil a ambos lados de la entrada vaginal. Se llenan de sangre durante la excitación.</li>
+  </ul>
+
+  <div class="highlight">
+    El clítoris interactúa con más de 15.000 nervios pélvicos. Los bulbos vestibulares rodean la vagina, lo que explica por qué ciertos ángulos de penetración producen más sensación: están estimulando el clítoris interno, no "otro punto".
+  </div>
+
+  <h3>La vagina</h3>
+  <p>El tercio exterior (los primeros ~4 cm) concentra el 90% de las terminaciones nerviosas vaginales. Los dos tercios interiores tienen muy poca sensibilidad táctil — están diseñados para el parto, no para el placer.</p>
+
+  <div class="tip">La "profundidad" es irrelevante para la mayoría. La presión y el ángulo en el tercio exterior importan mucho más.</div>
+
+  <!-- CAPÍTULO 3 -->
+  <h2><span class="num">03.</span> Técnica: qué funciona según la ciencia</h2>
+  <p class="chapter-intro">OMGYES entrevistó a 20.000 mujeres y encontró patrones concretos. Aquí los más relevantes.</p>
+
+  <h3>Edging (aproximación gradual)</h3>
+  <p>Acercarse al orgasmo y retirarse ligeramente varias veces antes de dejar que ocurra. El 58% de las participantes reportó que esto produce orgasmos más intensos.</p>
+
+  <h3>Consistency (consistencia)</h3>
+  <p><strong>El error nº1 identificado por OMGYES:</strong> cambiar de técnica justo cuando algo funciona. Cuando encuentras un ritmo, movimiento o presión que funciona — mantén. No improvises. No aceleres sin que te lo pidan.</p>
+
+  <h3>Layering (capas de estimulación)</h3>
+  <p>Combinar estimulación clitoral con penetración, o clítoris con otras zonas erógenas simultáneamente. Funciona porque los nervios se amplifican entre sí.</p>
+
+  <h3>Orbiting (estimulación periférica)</h3>
+  <p>En lugar de estimular directamente el glande clitorídeo (que puede ser demasiado intenso o irritante sin suficiente excitación previa), moverse en círculos alrededor de él. El 64% prefiere esto especialmente al inicio.</p>
+
+  <h3>Staging (fases)</h3>
+  <p>El cuerpo responde diferente según el nivel de excitación. Lo que funciona al principio puede no funcionar al final, y viceversa. Ajustar presión e intensidad según la fase.</p>
+
+  <div class="tip">No hay una técnica universal. Hay patrones comunes, pero cada persona es diferente. La consistencia y la atención siempre son más importantes que la "técnica perfecta".</div>
+
+  <!-- CAPÍTULO 4 -->
+  <h2><span class="num">04.</span> Señales: cómo saber que funciona</h2>
+  <p class="chapter-intro">No todo el mundo vocaliza. Aprende a leer el cuerpo.</p>
+
+  <h3>Señales de excitación</h3>
+  <ul>
+    <li>Lubricación vaginal (aunque varía mucho según el ciclo hormonal — no es indicador único).</li>
+    <li>Endurecimiento y salida del glande clitorídeo del prepucio.</li>
+    <li>Hinchazón de los labios menores.</li>
+    <li>Cambio en el ritmo respiratorio.</li>
+    <li>Tensión muscular en piernas y glúteos.</li>
+    <li>Coloración más rosada/rojiza en la vulva.</li>
+  </ul>
+
+  <h3>Señales de que algo no funciona</h3>
+  <ul>
+    <li>Cuerpo que se tensa y cierra (distinto de la tensión de excitación — hay diferencia).</li>
+    <li>Respiración que se vuelve superficial y rápida de forma incómoda.</li>
+    <li>Reducción de lubricación.</li>
+    <li>Silencio total donde antes había respuesta.</li>
+  </ul>
+
+  <div class="highlight">
+    La lubricación no equivale a excitación, y su ausencia no equivale a desinterés. El ciclo menstrual, el estrés, la medicación (especialmente anticonceptivos hormonales) y la menopausia afectan drásticamente a la lubricación. Usa lubricante de base acuosa sin complejos.
+  </div>
+
+  <!-- CAPÍTULO 5 -->
+  <h2><span class="num">05.</span> Los errores más comunes</h2>
+
+  <ol>
+    <li><strong>Ir directo al grano.</strong> La excitación previa no es opcional — es la diferencia entre una experiencia mediocre y una buena. El cuerpo necesita tiempo para que los bulbos vestibulares se llenen de sangre y el clítoris salga del prepucio.</li>
+    <li><strong>Cambiar de técnica constantemente.</strong> El error nº1 de OMGYES. Si algo funciona, sigue. La variación es para explorar, no para el momento en que ya encontraste el camino.</li>
+    <li><strong>Presión excesiva directa sobre el glande.</strong> El glande clitorídeo tiene 8.000 terminaciones en muy poco espacio. Al principio, la estimulación directa puede ser irritante. Empieza por los alrededores.</li>
+    <li><strong>Asumir que la penetración es suficiente.</strong> El 70% necesita estimulación clitoral para el orgasmo. La penetración sola no activa el clítoris en la mayoría de los casos anatómicos.</li>
+    <li><strong>No usar lubricante.</strong> La lubricación artificial no es señal de fracaso — es higiene básica y mejora la experiencia para todas las partes implicadas.</li>
+    <li><strong>Ignorar el contexto mental.</strong> El cerebro es el órgano sexual más importante. Estrés, ansiedad, inseguridad y desconexión emocional bloquean la respuesta física antes de que llegue ninguna técnica.</li>
+  </ol>
+
+  <!-- CAPÍTULO 6 -->
+  <h2><span class="num">06.</span> Aftercare: después también importa</h2>
+  <p class="chapter-intro">El cuidado posterior no es sentimentalismo — es fisiología.</p>
+
+  <p>Después del orgasmo el cuerpo libera oxitocina y el sistema nervioso parasimpático toma el control. La glande clitorídea puede volverse hipersensible durante varios minutos — el contacto directo en ese momento puede ser molesto aunque unos minutos antes era placentero.</p>
+
+  <h3>Qué hacer</h3>
+  <ul>
+    <li>Preguntar qué necesita la otra persona: contacto físico, silencio, agua, hablar.</li>
+    <li>No retirarse de golpe — ni física ni emocionalmente.</li>
+    <li>No interpretar la hipersensibilidad post-orgasmo como señal de rechazo.</li>
+  </ul>
+
+  <div class="tip">Aftercare no es solo para BDSM. Es para cualquier encuentro sexual donde hubo vulnerabilidad, que es prácticamente todos.</div>
+
+  <!-- CAPÍTULO 7 -->
+  <h2><span class="num">07.</span> Sobre el orgasmo: expectativas reales</h2>
+
+  <p>El orgasmo no es el único objetivo válido de un encuentro sexual, ni su ausencia indica fracaso de nadie. Dicho esto, cuando el orgasmo no ocurre siendo deseado, las causas más frecuentes son:</p>
+
+  <ul>
+    <li>Insuficiente excitación previa.</li>
+    <li>Ansiedad de rendimiento (en cualquiera de las personas implicadas).</li>
+    <li>Medicación (antidepresivos ISRS especialmente).</li>
+    <li>Falta de estimulación clitoral adecuada.</li>
+    <li>No haber encontrado aún qué funciona específicamente para esa persona.</li>
+  </ul>
+
+  <div class="highlight">
+    Según el Journal of Sex &amp; Marital Therapy (2017, n=1.055): el 36,6% de las mujeres necesita estimulación clitoral directa para el orgasmo durante la penetración. El 18,4% puede orgasmarse solo con penetración. El 36% orgasma con penetración pero no lo requiere. El 9% no orgasma con penetración independientemente de la estimulación adicional.
+  </div>
+
+  <p>No existe una forma "correcta" de orgasmo, una duración estándar ni una frecuencia normal. Lo que existe es lo que funciona para cada persona específica, que solo se descubre con comunicación y atención.</p>
+
+  <div class="footer-note">
+    <p><strong>PU$$Y EATERZ — Guía Comer Coños</strong></p>
+    <p>Contenido basado en: Scarleteen.com · OMGYES (2016, 2020) · Journal of Sex &amp; Marital Therapy · Helen O'Connell et al. (1998–2005) · Indiana University School of Medicine, National Survey of Sexual Health and Behavior.</p>
+    <p style="margin-top:.5rem">Esta guía es educativa. No sustituye atención médica o terapia sexual profesional.</p>
+    <p style="margin-top:.5rem; color: #c0392b; font-weight: 700">© 2026 PU$$Y EATERZ — Raxxeta forever ✦</p>
+  </div>
+
+</body>
+</html>
