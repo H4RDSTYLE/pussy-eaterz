@@ -224,6 +224,18 @@ em { font-style: italic; color: var(--hot-pink); }
   gap: .2rem;
 }
 
+/* Green $$ override */
+.dollar-green {
+  background: linear-gradient(90deg, #00e676, #b9f6ca, #00e676);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: holo-shift 2s ease infinite;
+  display: inline;
+  filter: drop-shadow(0 0 6px rgba(0,230,118,0.6));
+}
+
 .nav__links {
   display: flex;
   list-style: none;
