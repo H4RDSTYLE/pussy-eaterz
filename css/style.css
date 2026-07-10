@@ -1,6 +1,7 @@
 /* =============================================
    PU$$Y EATERZ — Stylesheet
-   Estética: canallita, femenina, empowering
+   Estética: raxxeta, femenina, empowering
+   Rave edition — brilli brilli forever
    ============================================= */
 
 :root {
@@ -13,6 +14,10 @@
   --purple:    #6c3483;
   --gold:      #d4af37;
   --red:       #c0392b;
+  --holo-1:    #ff69b4;
+  --holo-2:    #da70d6;
+  --holo-3:    #ffd700;
+  --holo-4:    #87ceeb;
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'Space Grotesk', system-ui, sans-serif;
@@ -21,6 +26,96 @@
   --radius-lg: 24px;
   --shadow: 0 4px 32px rgba(233,30,140,0.12);
   --shadow-lg: 0 8px 64px rgba(233,30,140,0.2);
+}
+
+/* =============================================
+   BRILLI BRILLI — Sparkles & Holographic
+   ============================================= */
+
+/* Floating sparkle particles (injected by JS) */
+.sparkle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform, opacity;
+  animation: sparkle-float var(--dur, 3s) ease-in-out var(--delay, 0s) infinite;
+  color: var(--sc, #E91E8C);
+  font-size: var(--sz, 1rem);
+  top: var(--ty, 50%);
+  left: var(--tx, 50%);
+  line-height: 1;
+  text-shadow: 0 0 8px currentColor;
+}
+@keyframes sparkle-float {
+  0%   { opacity: 0;   transform: translate(0,0) scale(0) rotate(0deg); }
+  30%  { opacity: 1;   transform: translate(var(--mx,0px), var(--my,-40px)) scale(1) rotate(120deg); }
+  70%  { opacity: .7;  transform: translate(var(--mx2,10px), var(--my2,-80px)) scale(.8) rotate(240deg); }
+  100% { opacity: 0;   transform: translate(var(--mx3,0px), var(--my3,-120px)) scale(0) rotate(360deg); }
+}
+
+/* Holographic shimmer on hero title em */
+@keyframes holo-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glitter shimmer overlay for sections */
+@keyframes glitter-sweep {
+  0%   { transform: translateX(-100%) skewX(-15deg); opacity: 0; }
+  40%  { opacity: .6; }
+  100% { transform: translateX(300%) skewX(-15deg); opacity: 0; }
+}
+
+/* HK Bow pulse */
+@keyframes bow-pulse {
+  0%, 100% { transform: scale(1) rotate(-5deg); }
+  50%       { transform: scale(1.08) rotate(5deg); }
+}
+
+/* Glitter border animation */
+@keyframes border-glow {
+  0%,100% { box-shadow: 0 0 12px #E91E8C, 0 0 24px rgba(233,30,140,.3); }
+  33%      { box-shadow: 0 0 12px #da70d6, 0 0 24px rgba(218,112,214,.3); }
+  66%      { box-shadow: 0 0 12px #ffd700, 0 0 24px rgba(255,215,0,.3); }
+}
+
+/* =============================================
+   HELLO KITTY BOW
+   ============================================= */
+.hk-bow {
+  display: inline-block;
+  width: 52px;
+  height: 34px;
+  vertical-align: middle;
+  margin-left: .4rem;
+  animation: bow-pulse 2.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(233,30,140,0.6));
+}
+
+/* Bow accent on section titles */
+.section-title .bow-accent {
+  display: inline-block;
+  font-size: .55em;
+  vertical-align: super;
+  margin: 0 .2em;
+  animation: bow-pulse 3s ease-in-out infinite;
+}
+
+/* Glitter strip above marquee */
+.hero__glitter {
+  position: absolute;
+  bottom: 48px; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg,
+    transparent, #ff69b4, #ffd700, #da70d6, #87ceeb, #ff69b4, transparent);
+  background-size: 200% 100%;
+  animation: glitter-sweep-line 2s linear infinite;
+  opacity: .8;
+}
+@keyframes glitter-sweep-line {
+  0%   { background-position: -100% 0; }
+  100% { background-position: 200% 0; }
 }
 
 /* RESET */
@@ -118,7 +213,15 @@ em { font-style: italic; color: var(--hot-pink); }
   font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: -.01em;
-  color: var(--hot-pink);
+  background: linear-gradient(90deg, #E91E8C, #da70d6, #E91E8C);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: holo-shift 3s ease infinite;
+  display: flex;
+  align-items: center;
+  gap: .2rem;
 }
 
 .nav__links {
@@ -191,9 +294,14 @@ em { font-style: italic; color: var(--hot-pink); }
 .hero__title em {
   display: block;
   font-style: italic;
-  color: var(--hot-pink);
-  -webkit-text-stroke: 2px var(--hot-pink);
-  color: transparent;
+  background: linear-gradient(90deg,
+    #ff69b4, #da70d6, #E91E8C, #ffd700, #ff1493, #da70d6, #ff69b4);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: holo-shift 4s ease infinite;
+  filter: drop-shadow(0 0 18px rgba(233,30,140,0.5));
 }
 
 .hero__sub {
@@ -323,7 +431,7 @@ em { font-style: italic; color: var(--hot-pink); }
 /* Card accent colors */
 .card--tarot   { --accent: #6c3483; }
 .card--haaland { --accent: #1e3a5f; }
-.card--guia    { --accent: #c0392b; }
+.card--guia    { --accent: #c0392b; grid-column: span 2; }
 .card--horoscopo { --accent: #d4af37; }
 .card--setas   { --accent: #1e8449; }
 .card--lola    { --accent: #e67e22; }
@@ -334,6 +442,81 @@ em { font-style: italic; color: var(--hot-pink); }
 .card--horoscopo .card__badge { background: #fdf9e7; color: #9a7d0a; }
 .card--setas   .card__badge { background: #eafaf1; color: #1e8449; }
 .card--lola    .card__badge { background: #fef5e7; color: #b7770d; }
+
+/* Guía especial: 2 tangas + PDF */
+.card--guia .card__tanga { display: none; }
+.guia-tangas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.guia-tangas svg { width: 100%; height: auto; border-radius: 8px; overflow: hidden; }
+.guia-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: #c0392b;
+  color: #fff;
+  padding: .55rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .9rem;
+  margin-top: .75rem;
+  transition: background .15s, transform .15s;
+  text-decoration: none;
+  animation: border-glow 3s ease infinite;
+}
+.guia-pdf:hover { background: #96281b; transform: translateY(-2px); }
+.guia-pdf-icon { font-size: 1.1rem; }
+
+/* Brilli brilli en tarjetas: hover shimmer */
+.card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 2px solid transparent;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+  position: relative;
+  overflow: hidden;
+}
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.4) 50%, transparent 60%);
+  transition: none;
+  pointer-events: none;
+}
+.card:hover::after {
+  animation: glitter-sweep .5s ease forwards;
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--hot-pink); }
+
+/* Primary button glitter shimmer */
+.btn--primary {
+  position: relative;
+  overflow: hidden;
+  background: var(--hot-pink);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(233,30,140,0.35);
+}
+.btn--primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.35) 50%, transparent 60%);
+  pointer-events: none;
+}
+.btn--primary:hover::after { animation: glitter-sweep .4s ease forwards; }
+.btn--primary:hover {
+  background: var(--deep-pink);
+  box-shadow: 0 6px 28px rgba(233,30,140,0.5);
+}
 
 /* =============================================
    SORPRESA

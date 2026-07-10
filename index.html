@@ -13,7 +13,19 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <a href="#" class="nav__logo">PU$$Y EATERZ</a>
+    <a href="#" class="nav__logo">
+      PU$$Y EATERZ
+      <!-- Hello Kitty bow SVG -->
+      <svg class="hk-bow" viewBox="0 0 80 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="22" cy="25" rx="20" ry="14" fill="#E91E8C" transform="rotate(-12,22,25)"/>
+        <ellipse cx="58" cy="25" rx="20" ry="14" fill="#E91E8C" transform="rotate(12,58,25)"/>
+        <ellipse cx="16" cy="19" rx="10" ry="6" fill="rgba(255,255,255,0.32)" transform="rotate(-12,16,19)"/>
+        <ellipse cx="64" cy="19" rx="10" ry="6" fill="rgba(255,255,255,0.32)" transform="rotate(12,64,19)"/>
+        <circle cx="40" cy="25" r="9" fill="#ff4da6"/>
+        <circle cx="40" cy="25" r="5" fill="#E91E8C"/>
+        <circle cx="37" cy="22" r="2" fill="rgba(255,255,255,0.5)"/>
+      </svg>
+    </a>
     <ul class="nav__links">
       <li><a href="#colecciones">Colecciones</a></li>
       <li><a href="#customizador">Customiza</a></li>
@@ -27,7 +39,7 @@
   <header class="hero">
     <div class="hero__noise"></div>
     <div class="hero__content">
-      <p class="hero__eyebrow">✦ Edición Canalla 2026 ✦</p>
+      <p class="hero__eyebrow">✦ Edición Raxxeta 2026 ✦</p>
       <h1 class="hero__title">PU$$Y<br><em>EATERZ</em></h1>
       <p class="hero__sub">Tangas que gritan lo que tú piensas.<br>Diseñadas para cuerpos reales. Estética sin disculpas.</p>
       <div class="hero__ctas">
@@ -35,10 +47,11 @@
         <a href="#customizador" class="btn btn--ghost">Crea el tuyo</a>
       </div>
     </div>
+    <div class="hero__glitter"></div>
     <div class="hero__marquee-wrap">
       <div class="marquee">
-        <span>TANGAS CON ACTITUD ✦ EMPODERAMIENTO TOTAL ✦ HAALAND TE LO FIRMA ✦ COÑO LIBRE ✦ SETAS MÁGICAS ✦ OLÉ LOLA ✦ TAROT EN TU CULO ✦ EL UNIVERSO TE MANDA BUENAS BRAGAS ✦ </span>
-        <span>TANGAS CON ACTITUD ✦ EMPODERAMIENTO TOTAL ✦ HAALAND TE LO FIRMA ✦ COÑO LIBRE ✦ SETAS MÁGICAS ✦ OLÉ LOLA ✦ TAROT EN TU CULO ✦ EL UNIVERSO TE MANDA BUENAS BRAGAS ✦ </span>
+        <span>TANGAS CON ACTITUD ✦ EMPODERAMIENTO TOTAL ✦ HAALAND TE LO FIRMA ✦ COÑO LIBRE ✦ SETAS MÁGICAS ✦ OLÉ LOLA ✦ TAROT EN TU CULO ✦ EL UNIVERSO TE MANDA BUENAS BRAGAS ✦ RAXXETA FOREVER ✦ </span>
+        <span>TANGAS CON ACTITUD ✦ EMPODERAMIENTO TOTAL ✦ HAALAND TE LO FIRMA ✦ COÑO LIBRE ✦ SETAS MÁGICAS ✦ OLÉ LOLA ✦ TAROT EN TU CULO ✦ EL UNIVERSO TE MANDA BUENAS BRAGAS ✦ RAXXETA FOREVER ✦ </span>
       </div>
     </div>
   </header>
@@ -46,136 +59,334 @@
   <!-- COLECCIONES -->
   <section class="colecciones" id="colecciones">
     <div class="container">
-      <h2 class="section-title">Las <em>colecciones</em></h2>
+      <h2 class="section-title">Las <em>colecciones</em>
+        <span class="bow-accent">
+          <svg viewBox="0 0 40 26" width="28" height="18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="11" cy="13" rx="11" ry="8" fill="#E91E8C" transform="rotate(-10,11,13)"/>
+            <ellipse cx="29" cy="13" rx="11" ry="8" fill="#E91E8C" transform="rotate(10,29,13)"/>
+            <circle cx="20" cy="13" r="5" fill="#ff4da6"/>
+          </svg>
+        </span>
+      </h2>
       <p class="section-sub">Cada tanga cuenta una historia. ¿Cuál es la tuya?</p>
       <div class="colecciones__grid">
 
-        <!-- TAROT -->
+        <!-- ═══ TAROT — ARCANA MAYOR ═══ -->
         <article class="card card--tarot">
           <div class="card__badge">Mística</div>
           <div class="card__tanga">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+            <svg viewBox="0 0 400 310" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
               <defs>
-                <pattern id="lace-tarot" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-                  <circle cx="12" cy="12" r="4" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
-                  <circle cx="0"  cy="0"  r="2" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width=".7"/>
-                  <circle cx="24" cy="0"  r="2" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width=".7"/>
-                  <circle cx="0"  cy="24" r="2" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width=".7"/>
-                  <circle cx="24" cy="24" r="2" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width=".7"/>
+                <pattern id="stars-tarot" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <text x="20" y="22" text-anchor="middle" font-size="8" fill="rgba(212,175,55,0.3)">✦</text>
                 </pattern>
-                <clipPath id="clip-tarot">
-                  <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z
-                           M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z
-                           M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z
-                           M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z"/>
-                </clipPath>
+                <radialGradient id="tarot-bg" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="#3d0a6e"/>
+                  <stop offset="100%" stop-color="#150030"/>
+                </radialGradient>
               </defs>
-              <!-- base -->
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#6c3483"/>
-              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#6c3483"/>
-              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#6c3483"/>
-              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#6c3483"/>
-              <!-- lace overlay on band -->
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="url(#lace-tarot)"/>
-              <!-- stars -->
-              <text x="200" y="165" text-anchor="middle" font-size="38" opacity=".9">☽</text>
-              <text x="120" y="148" text-anchor="middle" font-size="16" opacity=".6">✦</text>
-              <text x="280" y="148" text-anchor="middle" font-size="16" opacity=".6">✦</text>
-              <text x="200" y="260" text-anchor="middle" font-size="18" opacity=".85">★</text>
-              <!-- outline -->
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+              <!-- Waistband -->
+              <path d="M 20,46 Q 200,24 380,46 L 376,70 Q 200,52 24,70 Z" fill="#6c3483"/>
+              <!-- Left strap -->
+              <path d="M 24,70 Q 36,76 58,85 L 61,79 Q 40,73 27,66 Z" fill="#6c3483"/>
+              <!-- Right strap -->
+              <path d="M 376,70 Q 364,76 342,85 L 339,79 Q 360,73 373,66 Z" fill="#6c3483"/>
+              <!-- Front panel — LA LUNA Arcana Major illustration -->
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="url(#tarot-bg)"/>
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="url(#stars-tarot)"/>
+              <!-- Lace on waistband -->
+              <path d="M 20,46 Q 200,24 380,46 L 376,70 Q 200,52 24,70 Z" fill="none" stroke="rgba(212,175,55,0.4)" stroke-width="1" stroke-dasharray="3 2"/>
+
+              <!-- ─── LA LUNA — Arcana Mayor ─── -->
+              <!-- Card frame inside panel -->
+              <rect x="138" y="92" width="124" height="175" rx="6" fill="rgba(0,0,0,0.4)" stroke="#d4af37" stroke-width="1.2"/>
+              <!-- Card title top -->
+              <text x="200" y="107" text-anchor="middle" font-family="serif" font-size="7.5" fill="#d4af37" letter-spacing="2">XVIII</text>
+              <!-- Night sky -->
+              <rect x="140" y="110" width="120" height="130" fill="#0a0020"/>
+              <!-- Moon face -->
+              <circle cx="200" cy="145" r="28" fill="#f0e4c8" stroke="#d4af37" stroke-width="1"/>
+              <!-- Moon profile face (crescent overlay) -->
+              <circle cx="212" cy="145" r="22" fill="#0a0020"/>
+              <!-- Moon face features on visible crescent -->
+              <ellipse cx="192" cy="138" rx="4" ry="5" fill="#e8d4b0"/>
+              <ellipse cx="193" cy="139" rx="2" ry="2.5" fill="#6a4a20"/>
+              <path d="M 188,152 Q 192,156 196,152" fill="none" stroke="#9a7a50" stroke-width="1.2"/>
+              <!-- Drops from moon -->
+              <path d="M 176,168 L 174,175 Q 176,178 178,175 Z" fill="#4488cc" opacity=".7"/>
+              <path d="M 185,172 L 183,179 Q 185,182 187,179 Z" fill="#4488cc" opacity=".6"/>
+              <!-- Stars around moon -->
+              <text x="152" y="135" font-size="9" fill="#d4af37">✦</text>
+              <text x="242" y="128" font-size="7" fill="#d4af37">★</text>
+              <text x="160" y="158" font-size="6" fill="#d4af37">✦</text>
+              <text x="235" y="152" font-size="8" fill="#d4af37">✦</text>
+              <!-- Water / pool at bottom -->
+              <ellipse cx="200" cy="230" rx="55" ry="10" fill="#1a3a7a" opacity=".75"/>
+              <path d="M 147,228 Q 165,224 183,227 Q 200,224 217,227 Q 235,224 253,228" fill="none" stroke="#5599dd" stroke-width=".8" opacity=".6"/>
+              <!-- Lobster/crayfish (simplified) -->
+              <ellipse cx="200" cy="226" rx="8" ry="5" fill="#cc4422" opacity=".8"/>
+              <path d="M 195,222 L 192,218 M 198,221 L 197,217 M 201,221 L 202,217 M 204,222 L 207,218" stroke="#cc4422" stroke-width="1.2" opacity=".7"/>
+              <!-- Left tower silhouette -->
+              <rect x="143" y="188" width="24" height="44" fill="#1a1a2e"/>
+              <rect x="140" y="184" width="30" height="7" fill="#222240"/>
+              <rect x="140" y="177" width="6" height="9" fill="#222240"/>
+              <rect x="150" y="177" width="6" height="9" fill="#222240"/>
+              <rect x="160" y="177" width="6" height="9" fill="#222240"/>
+              <!-- Right tower silhouette -->
+              <rect x="233" y="188" width="24" height="44" fill="#1a1a2e"/>
+              <rect x="230" y="184" width="30" height="7" fill="#222240"/>
+              <rect x="230" y="177" width="6" height="9" fill="#222240"/>
+              <rect x="240" y="177" width="6" height="9" fill="#222240"/>
+              <rect x="250" y="177" width="6" height="9" fill="#222240"/>
+              <!-- Path between towers -->
+              <path d="M 167,232 L 167,194 L 233,194 L 233,232" fill="none" stroke="#c8b89a" stroke-width=".8" opacity=".3"/>
+              <!-- Dog left -->
+              <path d="M 155,222 Q 158,215 163,212 Q 160,217 165,219 L 166,226 L 163,226 L 163,220 L 159,220 L 159,226 L 156,226 Z" fill="#555"/>
+              <!-- Wolf right -->
+              <path d="M 238,222 Q 235,213 231,210 Q 234,215 229,218 L 228,226 L 231,226 L 231,220 L 235,220 L 235,226 L 238,226 Z" fill="#444"/>
+              <!-- Card title bottom -->
+              <text x="200" y="255" text-anchor="middle" font-family="serif" font-size="8" fill="#d4af37" letter-spacing="3">LA LUNA</text>
+              <!-- Card outline -->
+              <rect x="138" y="92" width="124" height="175" rx="6" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+
+              <!-- Mini cards peek at sides (other arcana) -->
+              <rect x="62" y="100" width="70" height="100" rx="4" fill="#3d0a6e" stroke="#d4af37" stroke-width=".8" transform="rotate(-8,97,150)"/>
+              <text x="65" y="115" font-size="7" fill="#d4af37" transform="rotate(-8,65,115)">THE</text>
+              <text x="62" y="125" font-size="6" fill="#d4af37" transform="rotate(-8,62,125)">EMPRESS</text>
+              <text x="74" y="160" text-anchor="middle" font-size="28" transform="rotate(-8,74,160)">♀</text>
+
+              <rect x="268" y="100" width="70" height="100" rx="4" fill="#150030" stroke="#d4af37" stroke-width=".8" transform="rotate(8,303,150)"/>
+              <text x="305" y="115" text-anchor="middle" font-size="7" fill="#d4af37" transform="rotate(8,305,115)">THE</text>
+              <text x="305" y="125" text-anchor="middle" font-size="6" fill="#d4af37" transform="rotate(8,305,125)">STAR</text>
+              <text x="305" y="162" text-anchor="middle" font-size="26" transform="rotate(8,305,162)">★</text>
+
+              <!-- Glitter dots on waistband -->
+              <circle cx="60" cy="58" r="2" fill="#d4af37" opacity=".8"/>
+              <circle cx="110" cy="50" r="1.5" fill="#d4af37" opacity=".6"/>
+              <circle cx="340" cy="58" r="2" fill="#d4af37" opacity=".8"/>
+              <circle cx="290" cy="50" r="1.5" fill="#d4af37" opacity=".6"/>
+              <circle cx="200" cy="47" r="1.8" fill="#d4af37" opacity=".7"/>
             </svg>
           </div>
           <h3>Tarot</h3>
-          <p>La Emperatriz, La Luna, La Torre... en tu ropa interior. El universo te lo dice con seda y encaje.</p>
+          <p>La Luna, La Emperatriz, La Estrella... Arcana Mayor bordado en tul y seda. El universo te habla desde abajo.</p>
           <span class="card__price">desde 18€</span>
           <button class="btn btn--small btn--primary" data-tema="tarot">Customizar</button>
         </article>
 
-        <!-- HAALAND -->
+        <!-- ═══ HAALAND — CARA ═══ -->
         <article class="card card--haaland">
           <div class="card__badge">Fan Edition</div>
           <div class="card__tanga">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+            <svg viewBox="0 0 400 310" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
               <defs>
-                <pattern id="hex-haaland" x="0" y="0" width="30" height="26" patternUnits="userSpaceOnUse">
-                  <polygon points="15,1 28,8 28,18 15,25 2,18 2,8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <pattern id="hex-haaland" x="0" y="0" width="28" height="24" patternUnits="userSpaceOnUse">
+                  <polygon points="14,1 26,7 26,17 14,23 2,17 2,7" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width=".8"/>
                 </pattern>
               </defs>
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#1e3a5f"/>
-              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#1e3a5f"/>
-              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#1e3a5f"/>
-              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#1e3a5f"/>
-              <!-- hex pattern -->
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="url(#hex-haaland)"/>
-              <!-- #9 -->
-              <text x="200" y="185" text-anchor="middle" font-family="Georgia,serif" font-size="72" font-weight="bold" fill="rgba(255,255,255,0.12)">9</text>
-              <text x="200" y="175" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="bold" fill="rgba(255,255,255,0.7)">9</text>
-              <text x="200" y="262" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.6)">⚽</text>
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+              <!-- Waistband -->
+              <path d="M 20,46 Q 200,24 380,46 L 376,70 Q 200,52 24,70 Z" fill="#1e3a5f"/>
+              <!-- Left strap -->
+              <path d="M 24,70 Q 36,76 58,85 L 61,79 Q 40,73 27,66 Z" fill="#1e3a5f"/>
+              <!-- Right strap -->
+              <path d="M 376,70 Q 364,76 342,85 L 339,79 Q 360,73 373,66 Z" fill="#1e3a5f"/>
+              <!-- Panel background -->
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="#0d2240"/>
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="url(#hex-haaland)"/>
+
+              <!-- ─── HAALAND FACE caricature ─── -->
+              <!-- Jersey (behind face) -->
+              <path d="M 155,248 Q 152,292 200,295 Q 248,292 245,248 Z" fill="#6CABDD"/>
+              <text x="200" y="280" text-anchor="middle" font-family="Impact,Arial Black,sans-serif" font-size="20" font-weight="900" fill="white">9</text>
+              <!-- Neck -->
+              <rect x="188" y="228" width="24" height="22" rx="4" fill="#FDBCB4"/>
+              <!-- Head shape -->
+              <ellipse cx="200" cy="178" rx="58" ry="66" fill="#FDBCB4"/>
+              <!-- Hair — blonde undercut -->
+              <path d="M 147,152 Q 158,108 200,100 Q 242,108 253,152 Q 262,128 255,108 Q 230,82 200,80 Q 170,82 145,108 Q 138,128 147,152 Z" fill="#F4D03F"/>
+              <!-- Hair detail lines -->
+              <path d="M 150,145 Q 168,118 200,112" fill="none" stroke="#d4a030" stroke-width="1.5" opacity=".4"/>
+              <path d="M 250,145 Q 232,118 200,112" fill="none" stroke="#d4a030" stroke-width="1.5" opacity=".4"/>
+              <!-- Ear left -->
+              <ellipse cx="144" cy="178" rx="11" ry="15" fill="#FDBCB4"/>
+              <path d="M 146,170 Q 141,178 146,186" fill="none" stroke="#e89878" stroke-width="1.2"/>
+              <!-- Ear right -->
+              <ellipse cx="256" cy="178" rx="11" ry="15" fill="#FDBCB4"/>
+              <path d="M 254,170 Q 259,178 254,186" fill="none" stroke="#e89878" stroke-width="1.2"/>
+              <!-- Eyebrow left -->
+              <path d="M 162,155 Q 176,148 192,151" fill="none" stroke="#b8860b" stroke-width="3.2" stroke-linecap="round"/>
+              <!-- Eyebrow right -->
+              <path d="M 208,151 Q 224,148 238,155" fill="none" stroke="#b8860b" stroke-width="3.2" stroke-linecap="round"/>
+              <!-- Eye socket shadow left -->
+              <ellipse cx="177" cy="168" rx="16" ry="13" fill="rgba(0,0,0,0.05)"/>
+              <!-- Eye socket shadow right -->
+              <ellipse cx="223" cy="168" rx="16" ry="13" fill="rgba(0,0,0,0.05)"/>
+              <!-- Eye white left -->
+              <ellipse cx="177" cy="168" rx="14" ry="11" fill="white"/>
+              <!-- Eye white right -->
+              <ellipse cx="223" cy="168" rx="14" ry="11" fill="white"/>
+              <!-- Iris left (blue) -->
+              <circle cx="177" cy="169" r="8" fill="#2980B9"/>
+              <circle cx="223" cy="169" r="8" fill="#2980B9"/>
+              <!-- Pupil -->
+              <circle cx="178" cy="170" r="4.5" fill="#111"/>
+              <circle cx="224" cy="170" r="4.5" fill="#111"/>
+              <!-- Eye highlight -->
+              <circle cx="180" cy="167" r="2.2" fill="white"/>
+              <circle cx="226" cy="167" r="2.2" fill="white"/>
+              <!-- Eyelid line top -->
+              <path d="M 163,162 Q 177,156 191,162" fill="none" stroke="#444" stroke-width="1.2"/>
+              <path d="M 209,162 Q 223,156 237,162" fill="none" stroke="#444" stroke-width="1.2"/>
+              <!-- Nose -->
+              <path d="M 200,178 L 196,196 Q 200,200 204,196 Z" fill="rgba(220,150,130,0.45)"/>
+              <path d="M 192,199 Q 200,204 208,199" fill="none" stroke="#d08878" stroke-width="1.2"/>
+              <!-- Cheek flush -->
+              <ellipse cx="163" cy="190" rx="12" ry="7" fill="rgba(255,100,100,0.12)"/>
+              <ellipse cx="237" cy="190" rx="12" ry="7" fill="rgba(255,100,100,0.12)"/>
+              <!-- Big grin -->
+              <path d="M 170,212 Q 200,234 230,212" fill="none" stroke="#c0392b" stroke-width="2.8" stroke-linecap="round"/>
+              <!-- Teeth -->
+              <path d="M 174,215 Q 200,232 226,215 Q 215,224 185,224 Z" fill="white" opacity=".85"/>
+              <line x1="190" y1="216" x2="190" y2="224" stroke="rgba(0,0,0,0.12)" stroke-width=".8"/>
+              <line x1="200" y1="217" x2="200" y2="225" stroke="rgba(0,0,0,0.12)" stroke-width=".8"/>
+              <line x1="210" y1="216" x2="210" y2="224" stroke="rgba(0,0,0,0.12)" stroke-width=".8"/>
+
+              <!-- City badge on jersey -->
+              <circle cx="175" cy="262" r="7" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width=".8"/>
+              <text x="175" y="265" text-anchor="middle" font-size="6" fill="white">MCFC</text>
+
+              <!-- Waistband glitter dots -->
+              <circle cx="80"  cy="57" r="2.2" fill="#ffd700" opacity=".8"/>
+              <circle cx="140" cy="50" r="1.5" fill="#ffd700" opacity=".5"/>
+              <circle cx="320" cy="57" r="2.2" fill="#ffd700" opacity=".8"/>
+              <circle cx="260" cy="50" r="1.5" fill="#ffd700" opacity=".5"/>
             </svg>
           </div>
           <h3>Haaland</h3>
-          <p>Para las que marcan tantos como él pero con más estilo. Edición limitada. Gol asegurado.</p>
+          <p>Su cara. En tu tanga. Edición limitada con caricatura oficial raxxeta. Gol asegurado.</p>
           <span class="card__price">desde 22€</span>
           <button class="btn btn--small btn--primary" data-tema="haaland">Customizar</button>
         </article>
 
-        <!-- GUÍA -->
+        <!-- ═══ GUÍA COMER COÑOS — 2 tangas + PDF ═══ -->
         <article class="card card--guia">
           <div class="card__badge">Educativo</div>
-          <div class="card__tanga">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#c0392b"/>
-              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#c0392b"/>
-              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#c0392b"/>
-              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#c0392b"/>
-              <!-- text lines -->
-              <text x="200" y="68" text-anchor="middle" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">INSTRUCCIONES DE USO ✦</text>
-              <!-- arrow -->
-              <text x="200" y="155" text-anchor="middle" font-size="48" fill="rgba(255,255,255,0.8)">↓</text>
-              <text x="200" y="208" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.65)">RTFM</text>
-              <text x="200" y="262" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.75)">📖</text>
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+          <div class="guia-tangas">
+            <!-- Tanga 1: El Mapa -->
+            <svg viewBox="0 0 400 310" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <defs>
+                <radialGradient id="guia1-bg" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="#8b0000"/>
+                  <stop offset="100%" stop-color="#2a0000"/>
+                </radialGradient>
+              </defs>
+              <path d="M 20,46 Q 200,24 380,46 L 376,70 Q 200,52 24,70 Z" fill="#c0392b"/>
+              <path d="M 24,70 Q 36,76 58,85 L 61,79 Q 40,73 27,66 Z" fill="#c0392b"/>
+              <path d="M 376,70 Q 364,76 342,85 L 339,79 Q 360,73 373,66 Z" fill="#c0392b"/>
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="url(#guia1-bg)"/>
+              <!-- Label on waistband -->
+              <text x="200" y="57" text-anchor="middle" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.65)" letter-spacing="2.5">TANGA Nº1 — EL MAPA</text>
+              <!-- Anatomical map illustration (suggestive but tasteful) -->
+              <!-- Compass rose center -->
+              <circle cx="200" cy="178" r="40" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+              <circle cx="200" cy="178" r="25" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <!-- Compass points -->
+              <polygon points="200,135 204,168 200,176 196,168" fill="rgba(255,255,255,0.55)"/>
+              <polygon points="200,221 204,188 200,180 196,188" fill="rgba(255,255,255,0.25)"/>
+              <polygon points="157,178 190,174 198,178 190,182" fill="rgba(255,255,255,0.25)"/>
+              <polygon points="243,178 210,174 202,178 210,182" fill="rgba(255,255,255,0.25)"/>
+              <!-- North marker -->
+              <text x="200" y="127" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" letter-spacing="1">S</text>
+              <!-- Center dot -->
+              <circle cx="200" cy="178" r="5" fill="rgba(255,80,80,0.8)"/>
+              <!-- Dotted path lines -->
+              <path d="M 100,130 Q 140,160 200,178" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+              <path d="M 300,130 Q 260,160 200,178" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+              <!-- Region labels (cheeky) -->
+              <text x="115" y="150" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.4)">zona A</text>
+              <text x="265" y="150" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.4)">zona B</text>
+              <text x="200" y="245" text-anchor="middle" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.35)">X marca el punto</text>
+            </svg>
+
+            <!-- Tanga 2: La Brújula -->
+            <svg viewBox="0 0 400 310" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <defs>
+                <radialGradient id="guia2-bg" cx="50%" cy="35%" r="65%">
+                  <stop offset="0%" stop-color="#1a0000"/>
+                  <stop offset="100%" stop-color="#0d0000"/>
+                </radialGradient>
+              </defs>
+              <path d="M 20,46 Q 200,24 380,46 L 376,70 Q 200,52 24,70 Z" fill="#7b1010"/>
+              <path d="M 24,70 Q 36,76 58,85 L 61,79 Q 40,73 27,66 Z" fill="#7b1010"/>
+              <path d="M 376,70 Q 364,76 342,85 L 339,79 Q 360,73 373,66 Z" fill="#7b1010"/>
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="url(#guia2-bg)"/>
+              <!-- Label on waistband -->
+              <text x="200" y="57" text-anchor="middle" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.65)" letter-spacing="2">TANGA Nº2 — LA BRÚJULA</text>
+              <!-- Manual text (instructional pastiche) -->
+              <text x="200" y="118" text-anchor="middle" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)" letter-spacing="1">LEER ANTES DE USAR</text>
+              <line x1="130" y1="122" x2="270" y2="122" stroke="rgba(255,255,255,0.2)" stroke-width=".8"/>
+              <!-- Arrow pointing down -->
+              <path d="M 200,130 L 200,200" stroke="rgba(255,60,60,0.7)" stroke-width="3" stroke-linecap="round"/>
+              <polygon points="200,215 193,197 207,197" fill="rgba(255,60,60,0.8)"/>
+              <!-- Step labels -->
+              <text x="155" y="148" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.4)">1. localizar</text>
+              <text x="155" y="162" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.4)">2. escuchar</text>
+              <text x="155" y="176" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.4)">3. disfrutar</text>
+              <!-- RTFM badge -->
+              <rect x="152" y="222" width="96" height="22" rx="4" fill="rgba(255,0,0,0.2)" stroke="rgba(255,60,60,0.4)" stroke-width=".8"/>
+              <text x="200" y="237" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="rgba(255,120,120,0.9)" letter-spacing="3">R T F M</text>
             </svg>
           </div>
+
           <h3>Guía Comer Coños</h3>
-          <p>Porque la educación empieza por abajo. Instrucciones ilustradas. Para llevar en el cuerpo y en la mente.</p>
-          <span class="card__price">desde 20€</span>
-          <button class="btn btn--small btn--primary" data-tema="guia">Customizar</button>
+          <p>Dos tangas, un PDF. El Mapa y La Brújula. Porque la educación empieza por abajo. Instrucciones incluidas.</p>
+          <div style="display:flex; gap:.75rem; flex-wrap:wrap; align-items:center; margin-top:1rem;">
+            <button class="btn btn--small btn--primary" data-tema="guia">Customizar</button>
+            <a href="#" class="guia-pdf" onclick="alert('PDF en preparación — disponible en el lanzamiento ✦'); return false;">
+              <span class="guia-pdf-icon">📄</span> Descargar PDF gratis
+            </a>
+          </div>
+          <span class="card__price">Pack 2 tangas desde 34€</span>
         </article>
 
-        <!-- HORÓSCOPO -->
+        <!-- ═══ HORÓSCOPO ═══ -->
         <article class="card card--horoscopo">
           <div class="card__badge">Astral</div>
           <div class="card__tanga">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+            <svg viewBox="0 0 400 310" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
               <defs>
-                <radialGradient id="grad-horo" cx="50%" cy="50%" r="60%">
+                <radialGradient id="horo-bg" cx="50%" cy="35%" r="60%">
                   <stop offset="0%" stop-color="#1a0533"/>
-                  <stop offset="100%" stop-color="#0d0020"/>
+                  <stop offset="100%" stop-color="#060010"/>
                 </radialGradient>
               </defs>
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#0d0020"/>
-              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#0d0020"/>
-              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#0d0020"/>
-              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#0d0020"/>
-              <!-- constellation dots -->
-              <circle cx="100" cy="130" r="2" fill="#d4af37" opacity=".8"/>
-              <circle cx="145" cy="110" r="1.5" fill="#d4af37" opacity=".7"/>
-              <circle cx="170" cy="140" r="2.5" fill="#d4af37" opacity=".9"/>
-              <line x1="100" y1="130" x2="145" y2="110" stroke="#d4af37" stroke-width=".7" opacity=".4"/>
-              <line x1="145" y1="110" x2="170" y2="140" stroke="#d4af37" stroke-width=".7" opacity=".4"/>
-              <circle cx="300" cy="125" r="2" fill="#d4af37" opacity=".8"/>
-              <circle cx="255" cy="108" r="1.5" fill="#d4af37" opacity=".7"/>
-              <circle cx="230" cy="138" r="2.5" fill="#d4af37" opacity=".9"/>
-              <line x1="300" y1="125" x2="255" y2="108" stroke="#d4af37" stroke-width=".7" opacity=".4"/>
-              <line x1="255" y1="108" x2="230" y2="138" stroke="#d4af37" stroke-width=".7" opacity=".4"/>
-              <!-- zodiac center -->
-              <text x="200" y="175" text-anchor="middle" font-size="40" fill="#d4af37" opacity=".9">♎</text>
-              <text x="200" y="64" text-anchor="middle" font-family="serif" font-size="9" fill="#d4af37" opacity=".6" letter-spacing="3">✦ ♈ ♉ ♊ ♋ ♌ ♍ ✦</text>
-              <text x="200" y="262" text-anchor="middle" font-size="12" fill="#d4af37" opacity=".7">✦</text>
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="1.5"/>
+              <path d="M 20,46 Q 200,24 380,46 L 376,70 Q 200,52 24,70 Z" fill="#0d0020"/>
+              <path d="M 24,70 Q 36,76 58,85 L 61,79 Q 40,73 27,66 Z" fill="#0d0020"/>
+              <path d="M 376,70 Q 364,76 342,85 L 339,79 Q 360,73 373,66 Z" fill="#0d0020"/>
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="url(#horo-bg)"/>
+              <!-- Zodiac band on waistband -->
+              <text x="200" y="57" text-anchor="middle" font-family="serif" font-size="8.5" fill="#d4af37" opacity=".7" letter-spacing="3">♈ ♉ ♊ ♋ ♌ ♍ ♎ ♏ ♐ ♑ ♒ ♓</text>
+              <!-- Constellation lines -->
+              <circle cx="110" cy="140" r="2.5" fill="#d4af37" opacity=".9"/>
+              <circle cx="145" cy="118" r="2"   fill="#d4af37" opacity=".8"/>
+              <circle cx="170" cy="148" r="3"   fill="#d4af37" opacity=".9"/>
+              <circle cx="150" cy="172" r="1.8" fill="#d4af37" opacity=".7"/>
+              <line x1="110" y1="140" x2="145" y2="118" stroke="#d4af37" stroke-width=".9" opacity=".4"/>
+              <line x1="145" y1="118" x2="170" y2="148" stroke="#d4af37" stroke-width=".9" opacity=".4"/>
+              <line x1="170" y1="148" x2="150" y2="172" stroke="#d4af37" stroke-width=".9" opacity=".4"/>
+              <circle cx="290" cy="136" r="2.5" fill="#d4af37" opacity=".9"/>
+              <circle cx="255" cy="115" r="2"   fill="#d4af37" opacity=".8"/>
+              <circle cx="232" cy="145" r="3"   fill="#d4af37" opacity=".9"/>
+              <circle cx="250" cy="170" r="1.8" fill="#d4af37" opacity=".7"/>
+              <line x1="290" y1="136" x2="255" y2="115" stroke="#d4af37" stroke-width=".9" opacity=".4"/>
+              <line x1="255" y1="115" x2="232" y2="145" stroke="#d4af37" stroke-width=".9" opacity=".4"/>
+              <line x1="232" y1="145" x2="250" y2="170" stroke="#d4af37" stroke-width=".9" opacity=".4"/>
+              <!-- Big zodiac symbol center -->
+              <text x="200" y="202" text-anchor="middle" font-size="60" fill="#d4af37" opacity=".88">♎</text>
+              <!-- Small floating stars -->
+              <text x="178" y="115" font-size="8"  fill="#d4af37" opacity=".6">✦</text>
+              <text x="218" y="112" font-size="6"  fill="#d4af37" opacity=".5">★</text>
+              <text x="200" y="270" text-anchor="middle" font-size="11" fill="#d4af37" opacity=".6">✦</text>
             </svg>
           </div>
           <h3>Horóscopo</h3>
@@ -184,75 +395,134 @@
           <button class="btn btn--small btn--primary" data-tema="horoscopo">Customizar</button>
         </article>
 
-        <!-- SETAS -->
+        <!-- ═══ SETAS MÁGICAS — Amanita muscaria ═══ -->
         <article class="card card--setas">
           <div class="card__badge">Psicodélico</div>
           <div class="card__tanga">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#1e5c34"/>
-              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#1e5c34"/>
-              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#1e5c34"/>
-              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#1e5c34"/>
-              <!-- polka dots like amanita -->
-              <circle cx="80"  cy="120" r="5" fill="rgba(255,255,255,0.35)"/>
-              <circle cx="130" cy="105" r="4" fill="rgba(255,255,255,0.3)"/>
-              <circle cx="110" cy="150" r="3" fill="rgba(255,255,255,0.25)"/>
-              <circle cx="290" cy="118" r="5" fill="rgba(255,255,255,0.35)"/>
-              <circle cx="248" cy="108" r="4" fill="rgba(255,255,255,0.3)"/>
-              <circle cx="310" cy="155" r="3" fill="rgba(255,255,255,0.25)"/>
-              <!-- mushroom center -->
-              <ellipse cx="200" cy="150" rx="28" ry="18" fill="#e74c3c" opacity=".85"/>
-              <circle cx="191" cy="144" r="4.5" fill="rgba(255,255,255,0.6)"/>
-              <circle cx="208" cy="141" r="3" fill="rgba(255,255,255,0.5)"/>
-              <circle cx="200" cy="154" r="3.5" fill="rgba(255,255,255,0.5)"/>
-              <rect x="195" y="168" width="10" height="22" rx="3" fill="#c8a97e" opacity=".9"/>
-              <text x="200" y="263" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.7)">🍄</text>
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+            <svg viewBox="0 0 400 310" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+              <defs>
+                <radialGradient id="setas-bg" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="#0d2e14"/>
+                  <stop offset="100%" stop-color="#060d08"/>
+                </radialGradient>
+              </defs>
+              <path d="M 20,46 Q 200,24 380,46 L 376,70 Q 200,52 24,70 Z" fill="#1e5c34"/>
+              <path d="M 24,70 Q 36,76 58,85 L 61,79 Q 40,73 27,66 Z" fill="#1e5c34"/>
+              <path d="M 376,70 Q 364,76 342,85 L 339,79 Q 360,73 373,66 Z" fill="#1e5c34"/>
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="url(#setas-bg)"/>
+
+              <!-- ─── AMANITA MUSCARIA illustration ─── -->
+              <!-- Ground line -->
+              <path d="M 100,248 Q 200,242 300,248" fill="none" stroke="#2d6e3a" stroke-width="1.5" opacity=".6"/>
+              <!-- Grass tufts -->
+              <path d="M 112,248 L 110,240 M 116,248 L 115,238 M 120,248 L 118,241" stroke="#2d8a3a" stroke-width="1.2" opacity=".5"/>
+              <path d="M 275,248 L 273,240 M 279,248 L 279,237 M 284,248 L 282,241" stroke="#2d8a3a" stroke-width="1.2" opacity=".5"/>
+
+              <!-- BIG CENTER MUSHROOM — Amanita muscaria -->
+              <!-- Stem -->
+              <path d="M 183,248 Q 181,210 183,190 Q 186,185 200,185 Q 214,185 217,190 Q 219,210 217,248 Z" fill="#f5f0e8"/>
+              <!-- Stem ring (annulus) -->
+              <ellipse cx="200" cy="215" rx="18" ry="5" fill="#e8e0d0"/>
+              <path d="M 182,215 Q 200,220 218,215" fill="none" stroke="#c8c0b0" stroke-width="1"/>
+              <!-- Cap shadow -->
+              <ellipse cx="200" cy="192" rx="52" ry="12" fill="rgba(0,0,0,0.25)"/>
+              <!-- Cap (red) -->
+              <path d="M 152,190 Q 152,140 200,128 Q 248,140 248,190 Z" fill="#cc2200"/>
+              <!-- Cap highlight gradient effect -->
+              <path d="M 155,185 Q 162,148 200,136" fill="none" stroke="rgba(255,100,80,0.4)" stroke-width="8" stroke-linecap="round"/>
+              <!-- Cap rim -->
+              <path d="M 148,192 Q 200,200 252,192" fill="#bb1a00" stroke="none"/>
+              <!-- White spots (verrucae) -->
+              <ellipse cx="200" cy="150" rx="10" ry="9" fill="rgba(255,255,255,0.88)"/>
+              <ellipse cx="172" cy="165" rx="8"  ry="7" fill="rgba(255,255,255,0.82)"/>
+              <ellipse cx="228" cy="165" rx="8"  ry="7" fill="rgba(255,255,255,0.82)"/>
+              <ellipse cx="160" cy="182" rx="7"  ry="6" fill="rgba(255,255,255,0.75)"/>
+              <ellipse cx="240" cy="182" rx="7"  ry="6" fill="rgba(255,255,255,0.75)"/>
+              <ellipse cx="200" cy="178" rx="6"  ry="5" fill="rgba(255,255,255,0.78)"/>
+
+              <!-- Small mushroom LEFT (oyster) -->
+              <path d="M 112,248 Q 110,230 114,224 Q 118,220 122,224 Q 126,230 124,248 Z" fill="#d4c4a8"/>
+              <path d="M 108,226 Q 108,210 118,206 Q 128,210 128,226 Z" fill="#c8b898"/>
+              <ellipse cx="118" cy="226" rx="10" ry="3.5" fill="#b8a888"/>
+
+              <!-- Small mushroom RIGHT (psilocybe) -->
+              <path d="M 274,248 Q 272,232 275,224 Q 278,220 282,220 Q 286,220 289,224 Q 292,232 290,248 Z" fill="#c8a870"/>
+              <path d="M 268,226 Q 270,208 282,205 Q 294,208 296,226 Z" fill="#b89860"/>
+              <!-- Nipple -->
+              <circle cx="282" cy="205" r="3" fill="#a08050"/>
+
+              <!-- Spore dots -->
+              <circle cx="145" cy="220" r="1.5" fill="rgba(255,255,255,0.3)"/>
+              <circle cx="160" cy="230" r="1"   fill="rgba(255,255,255,0.25)"/>
+              <circle cx="255" cy="218" r="1.5" fill="rgba(255,255,255,0.3)"/>
+              <circle cx="240" cy="228" r="1"   fill="rgba(255,255,255,0.25)"/>
+
+              <!-- Glitter on waistband -->
+              <circle cx="70"  cy="57" r="2" fill="rgba(255,255,255,0.6)"/>
+              <circle cx="120" cy="50" r="1.5" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="330" cy="57" r="2" fill="rgba(255,255,255,0.6)"/>
+              <circle cx="280" cy="50" r="1.5" fill="rgba(255,255,255,0.4)"/>
             </svg>
           </div>
           <h3>Setas Mágicas</h3>
-          <p>Amanita muscaria, seta ostra, trufa negra... botánica y picardía en un solo tejido. Fly, baby.</p>
+          <p>Amanita muscaria, seta ostra, psilocybe... botánica raxxeta en tejido. Fly, baby. Fly.</p>
           <span class="card__price">desde 19€</span>
           <button class="btn btn--small btn--primary" data-tema="setas">Customizar</button>
         </article>
 
-        <!-- LOLA FLORES -->
+        <!-- ═══ LOLA FLORES ═══ -->
         <article class="card card--lola">
           <div class="card__badge">Olé</div>
           <div class="card__tanga">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
+            <svg viewBox="0 0 400 310" xmlns="http://www.w3.org/2000/svg" class="tanga-card-svg">
               <defs>
-                <pattern id="lunares" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-                  <circle cx="14" cy="14" r="5" fill="rgba(0,0,0,0.25)"/>
+                <pattern id="lunares-lola" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+                  <circle cx="16" cy="16" r="6.5" fill="rgba(0,0,0,0.22)"/>
                 </pattern>
               </defs>
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#e63946"/>
-              <path d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#e63946"/>
-              <path d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#e63946"/>
-              <path d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#e63946"/>
-              <!-- lunares -->
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="url(#lunares)"/>
-              <!-- rose center -->
-              <text x="200" y="175" text-anchor="middle" font-size="42">🌹</text>
-              <!-- mantilla fringe on band -->
-              <line x1="30" y1="88" x2="30" y2="100" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="52" y1="84" x2="52" y2="96" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="74" y1="81" x2="74" y2="93" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="96" y1="79" x2="96" y2="91" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="118" y1="77" x2="118" y2="89" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="140" y1="75" x2="140" y2="87" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="162" y1="74" x2="162" y2="86" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="184" y1="73" x2="184" y2="85" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="200" y1="73" x2="200" y2="85" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="216" y1="73" x2="216" y2="85" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="238" y1="74" x2="238" y2="86" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="260" y1="75" x2="260" y2="87" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="282" y1="77" x2="282" y2="89" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="304" y1="79" x2="304" y2="91" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="326" y1="81" x2="326" y2="93" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="348" y1="84" x2="348" y2="96" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <line x1="370" y1="88" x2="370" y2="100" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
-              <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+              <path d="M 20,46 Q 200,24 380,46 L 376,70 Q 200,52 24,70 Z" fill="#e63946"/>
+              <path d="M 24,70 Q 36,76 58,85 L 61,79 Q 40,73 27,66 Z" fill="#e63946"/>
+              <path d="M 376,70 Q 364,76 342,85 L 339,79 Q 360,73 373,66 Z" fill="#e63946"/>
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="#cc2233"/>
+              <path d="M 58,85 Q 200,100 342,85 L 200,290 Z" fill="url(#lunares-lola)"/>
+              <!-- Mantilla fringe on waistband bottom -->
+              <line x1="26"  y1="70" x2="26"  y2="82" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="46"  y1="66" x2="46"  y2="78" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="66"  y1="63" x2="66"  y2="75" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="86"  y1="61" x2="86"  y2="73" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="106" y1="59" x2="106" y2="71" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="126" y1="57" x2="126" y2="69" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="146" y1="55" x2="146" y2="67" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="166" y1="54" x2="166" y2="66" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="186" y1="53" x2="186" y2="65" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="200" y1="53" x2="200" y2="65" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="214" y1="53" x2="214" y2="65" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="234" y1="54" x2="234" y2="66" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="254" y1="55" x2="254" y2="67" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="274" y1="57" x2="274" y2="69" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="294" y1="59" x2="294" y2="71" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="314" y1="61" x2="314" y2="73" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="334" y1="63" x2="334" y2="75" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="354" y1="66" x2="354" y2="78" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <line x1="374" y1="70" x2="374" y2="82" stroke="rgba(0,0,0,0.28)" stroke-width="1.6"/>
+              <!-- Rose center -->
+              <!-- Petals outer ring -->
+              <circle cx="200" cy="180" r="36" fill="#aa1122" opacity=".6"/>
+              <ellipse cx="200" cy="148" rx="14" ry="16" fill="#cc2233" transform="rotate(0,200,180)"/>
+              <ellipse cx="200" cy="148" rx="14" ry="16" fill="#cc2233" transform="rotate(45,200,180)"/>
+              <ellipse cx="200" cy="148" rx="14" ry="16" fill="#cc2233" transform="rotate(90,200,180)"/>
+              <ellipse cx="200" cy="148" rx="14" ry="16" fill="#cc2233" transform="rotate(135,200,180)"/>
+              <ellipse cx="200" cy="148" rx="14" ry="16" fill="#cc2233" transform="rotate(180,200,180)"/>
+              <ellipse cx="200" cy="148" rx="14" ry="16" fill="#cc2233" transform="rotate(225,200,180)"/>
+              <ellipse cx="200" cy="148" rx="14" ry="16" fill="#cc2233" transform="rotate(270,200,180)"/>
+              <ellipse cx="200" cy="148" rx="14" ry="16" fill="#cc2233" transform="rotate(315,200,180)"/>
+              <!-- Center of rose -->
+              <circle cx="200" cy="180" r="18" fill="#990011"/>
+              <circle cx="200" cy="180" r="10" fill="#cc3344"/>
+              <circle cx="200" cy="180" r="5"  fill="#ff6677"/>
+              <!-- Leaves -->
+              <ellipse cx="172" cy="210" rx="12" ry="6" fill="#2d6e1a" transform="rotate(-30,172,210)"/>
+              <ellipse cx="228" cy="210" rx="12" ry="6" fill="#2d6e1a" transform="rotate(30,228,210)"/>
             </svg>
           </div>
           <h3>Lola Flores</h3>
@@ -301,116 +571,65 @@
         <div class="custom__preview">
           <div class="custom__stage">
             <div class="custom__stage-label">VISTA PREVIA</div>
-            <svg id="tangaSVG" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg id="tangaSVG" viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
-                <!-- Lace pattern waistband -->
                 <pattern id="laceWB" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
                   <circle cx="11" cy="11" r="3.5" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width=".9"/>
                   <circle cx="0"  cy="0"  r="1.8" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width=".6"/>
                   <circle cx="22" cy="0"  r="1.8" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width=".6"/>
                   <circle cx="0"  cy="22" r="1.8" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width=".6"/>
                   <circle cx="22" cy="22" r="1.8" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width=".6"/>
-                  <line x1="0" y1="11" x2="22" y2="11" stroke="rgba(255,255,255,0.07)" stroke-width=".4"/>
-                  <line x1="11" y1="0" x2="11" y2="22" stroke="rgba(255,255,255,0.07)" stroke-width=".4"/>
                 </pattern>
-
-                <!-- Fabric texture - subtle noise -->
-                <filter id="fabric">
-                  <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
-                  <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
-                  <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blended"/>
-                  <feComposite in="blended" in2="SourceGraphic" operator="in"/>
-                </filter>
-
-                <!-- Highlight gradient -->
-                <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%"   stop-color="rgba(255,255,255,0.18)"/>
+                <linearGradient id="panelShine" x1="0%" y1="0%" x2="60%" y2="100%">
+                  <stop offset="0%"   stop-color="rgba(255,255,255,0.12)"/>
                   <stop offset="50%"  stop-color="rgba(255,255,255,0)"/>
-                  <stop offset="100%" stop-color="rgba(0,0,0,0.1)"/>
+                  <stop offset="100%" stop-color="rgba(0,0,0,0.08)"/>
                 </linearGradient>
-
-                <!-- Clip paths for the three models -->
-                <clipPath id="clipClasico">
-                  <path d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z
-                           M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z
-                           M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z
-                           M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z"/>
-                </clipPath>
-                <clipPath id="clipFino">
-                  <path d="M 60,62 Q 200,46 340,62 L 335,86 Q 200,72 65,86 Z
-                           M 65,86 Q 90,168 183,252 L 192,246 Q 72,162 80,84 Z
-                           M 335,86 Q 310,168 217,252 L 208,246 Q 328,162 320,84 Z
-                           M 183,252 Q 200,280 217,252 Q 200,240 183,252 Z"/>
-                </clipPath>
-                <clipPath id="clipBrasileno">
-                  <path d="M 5,55 Q 200,30 395,55 L 390,92 Q 200,70 10,92 Z
-                           M 10,92 Q 40,180 158,262 L 180,254 Q 56,172 30,88 Z
-                           M 390,92 Q 360,180 242,262 L 220,254 Q 344,172 370,88 Z
-                           M 158,262 Q 200,300 242,262 Q 200,240 158,262 Z"/>
-                </clipPath>
-
-                <!-- User image clip (clasico default) -->
                 <clipPath id="clipUserImg">
-                  <path id="userImgClipPath" d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z"/>
+                  <path id="userImgClipPath" d="M 28,52 Q 200,28 372,52 L 368,80 Q 200,60 32,80 Z M 32,80 Q 44,87 67,97 L 70,91 Q 48,83 37,76 Z M 368,80 Q 356,87 333,97 L 330,91 Q 352,83 363,76 Z M 67,97 Q 200,113 333,97 L 200,340 Z"/>
                 </clipPath>
               </defs>
 
-              <!-- ====== TANGA BODY ====== -->
               <!-- Waistband -->
-              <path id="svgWaistband" class="tanga-part" d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="#F9C5D1"/>
+              <path id="svgWaistband" d="M 28,52 Q 200,28 372,52 L 368,80 Q 200,60 32,80 Z" fill="#F9C5D1"/>
               <!-- Left strap -->
-              <path id="svgLeftStrap" class="tanga-part" d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="#F9C5D1"/>
+              <path id="svgLeftStrap" d="M 32,80 Q 44,87 67,97 L 70,91 Q 48,83 37,76 Z" fill="#F9C5D1"/>
               <!-- Right strap -->
-              <path id="svgRightStrap" class="tanga-part" d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="#F9C5D1"/>
-              <!-- Front panel -->
-              <path id="svgPanel" class="tanga-part" d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z" fill="#F9C5D1"/>
+              <path id="svgRightStrap" d="M 368,80 Q 356,87 333,97 L 330,91 Q 352,83 363,76 Z" fill="#F9C5D1"/>
+              <!-- Front panel — BIG TRIANGLE -->
+              <path id="svgPanel" d="M 67,97 Q 200,113 333,97 L 200,340 Z" fill="#F9C5D1"/>
 
-              <!-- Lace overlay on waistband only -->
-              <path id="svgLaceWB" d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z" fill="url(#laceWB)"/>
+              <!-- Lace on waistband -->
+              <path id="svgLaceWB" d="M 28,52 Q 200,28 372,52 L 368,80 Q 200,60 32,80 Z" fill="url(#laceWB)"/>
+              <!-- Shine on panel -->
+              <path id="svgPanelShine" d="M 67,97 Q 200,113 333,97 L 200,340 Z" fill="url(#panelShine)"/>
 
-              <!-- Shine highlight -->
-              <path id="svgShineL" d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z" fill="url(#shineGrad)" opacity=".5"/>
-              <path id="svgShineR" d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z" fill="url(#shineGrad)" opacity=".3"/>
-
-              <!-- User uploaded image -->
-              <image id="svgUserImg" x="0" y="0" width="400" height="300"
+              <!-- User image -->
+              <image id="svgUserImg" x="0" y="0" width="400" height="360"
                      clip-path="url(#clipUserImg)"
                      preserveAspectRatio="xMidYMid slice"
-                     href="" style="display:none; opacity:0.65"/>
+                     href="" style="display:none; opacity:0.6"/>
 
-              <!-- Theme decoration layer -->
-              <g id="svgTheme">
-                <!-- populated by JS -->
-              </g>
+              <!-- Theme decoration -->
+              <g id="svgTheme"></g>
 
               <!-- Embroidered text -->
-              <text id="svgEmbText"
-                    x="200" y="200"
+              <text id="svgEmbText" x="200" y="230"
                     text-anchor="middle"
                     font-family="'Playfair Display', Georgia, serif"
-                    font-size="18"
-                    font-style="italic"
+                    font-size="20" font-style="italic"
                     fill="rgba(255,255,255,0.9)"
-                    filter="drop-shadow(0 1px 2px rgba(0,0,0,0.4))"
+                    filter="drop-shadow(0 1px 3px rgba(0,0,0,0.5))"
                     style="display:none"></text>
 
-              <!-- Seam/outline -->
-              <path id="svgOutlineWB" d="M 15,58 Q 200,38 385,58 L 378,88 Q 200,72 22,88 Z"
-                    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
-              <path id="svgOutlineL"  d="M 22,88 Q 62,172 174,256 L 190,250 Q 66,166 42,84 Z"
-                    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
-              <path id="svgOutlineR"  d="M 378,88 Q 338,172 226,256 L 210,250 Q 334,166 358,84 Z"
-                    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
-              <path id="svgOutlineP"  d="M 174,256 Q 200,288 226,256 Q 200,238 174,256 Z"
-                    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
-
-              <!-- Elastic stitching on waistband top -->
-              <path id="svgStitch" d="M 18,62 Q 200,43 382,62"
-                    fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"
-                    stroke-dasharray="4 3"/>
+              <!-- Seam outlines -->
+              <path id="svgOutlineWB"  d="M 28,52 Q 200,28 372,52 L 368,80 Q 200,60 32,80 Z" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
+              <path id="svgOutlineL"   d="M 32,80 Q 44,87 67,97 L 70,91 Q 48,83 37,76 Z"    fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
+              <path id="svgOutlineR"   d="M 368,80 Q 356,87 333,97 L 330,91 Q 352,83 363,76 Z" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
+              <path id="svgOutlineP"   d="M 67,97 Q 200,113 333,97 L 200,340 Z"              fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.5"/>
+              <!-- Elastic stitch -->
+              <path id="svgStitch" d="M 32,58 Q 200,36 368,58" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.2" stroke-dasharray="4 3"/>
             </svg>
-
-            <!-- Model silhouette hint -->
             <div class="custom__model-tag" id="modelTag">Clásico</div>
           </div>
           <p class="custom__preview-label">Vista previa en tiempo real</p>
@@ -426,34 +645,31 @@
             <label>1. Modelo</label>
             <div class="model-cards" id="modeloPills">
               <button class="model-card active" data-modelo="clasico" data-precio="18">
-                <svg viewBox="0 0 100 80" class="model-thumb">
-                  <path d="M4,15 Q50,8 96,15 L94,23 Q50,18 6,23 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M6,23 Q16,45 44,64 L48,62 Q17,42 11,22 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M94,23 Q84,45 56,64 L52,62 Q83,42 89,22 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M44,64 Q50,73 56,64 Q50,59 44,64 Z" fill="currentColor" opacity=".9"/>
+                <svg viewBox="0 0 100 90" class="model-thumb">
+                  <path d="M 8,18 Q 50,8 92,18 L 90,28 Q 50,20 10,28 Z" fill="currentColor"/>
+                  <path d="M 10,28 Q 14,31 18,33 L 19,30 Q 14,28 11,26 Z" fill="currentColor"/>
+                  <path d="M 90,28 Q 86,31 82,33 L 81,30 Q 86,28 89,26 Z" fill="currentColor"/>
+                  <path d="M 18,33 Q 50,40 82,33 L 50,85 Z" fill="currentColor"/>
                 </svg>
-                <span>Clásico</span>
-                <small>18€</small>
+                <span>Clásico</span><small>18€</small>
               </button>
               <button class="model-card" data-modelo="fino" data-precio="20">
-                <svg viewBox="0 0 100 80" class="model-thumb">
-                  <path d="M16,16 Q50,10 84,16 L83,22 Q50,17 17,22 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M17,22 Q23,44 46,63 L48,61 Q18,40 20,21 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M83,22 Q77,44 54,63 L52,61 Q82,40 80,21 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M46,63 Q50,72 54,63 Q50,59 46,63 Z" fill="currentColor" opacity=".9"/>
+                <svg viewBox="0 0 100 90" class="model-thumb">
+                  <path d="M 20,20 Q 50,12 80,20 L 78,28 Q 50,22 22,28 Z" fill="currentColor"/>
+                  <path d="M 22,28 Q 26,30 30,32 L 31,29 Q 27,28 23,26 Z" fill="currentColor"/>
+                  <path d="M 78,28 Q 74,30 70,32 L 69,29 Q 73,28 77,26 Z" fill="currentColor"/>
+                  <path d="M 30,32 Q 50,38 70,32 L 50,82 Z" fill="currentColor"/>
                 </svg>
-                <span>Tanga Fino</span>
-                <small>20€</small>
+                <span>Tanga Fino</span><small>20€</small>
               </button>
               <button class="model-card" data-modelo="brasileno" data-precio="22">
-                <svg viewBox="0 0 100 80" class="model-thumb">
-                  <path d="M1,14 Q50,6 99,14 L97,24 Q50,17 3,24 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M3,24 Q10,48 40,66 L45,63 Q14,45 8,23 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M97,24 Q90,48 60,66 L55,63 Q86,45 92,23 Z" fill="currentColor" opacity=".9"/>
-                  <path d="M40,66 Q50,78 60,66 Q50,59 40,66 Z" fill="currentColor" opacity=".9"/>
+                <svg viewBox="0 0 100 90" class="model-thumb">
+                  <path d="M 2,16 Q 50,4 98,16 L 96,28 Q 50,18 4,28 Z" fill="currentColor"/>
+                  <path d="M 4,28 Q 8,31 12,34 L 14,30 Q 9,28 5,25 Z" fill="currentColor"/>
+                  <path d="M 96,28 Q 92,31 88,34 L 86,30 Q 91,28 95,25 Z" fill="currentColor"/>
+                  <path d="M 12,34 Q 50,44 88,34 L 50,88 Z" fill="currentColor"/>
                 </svg>
-                <span>Brasileño</span>
-                <small>22€</small>
+                <span>Brasileño</span><small>22€</small>
               </button>
             </div>
           </div>
@@ -463,13 +679,14 @@
             <div class="color-swatches" id="colorSwatches">
               <button class="swatch active" data-color="#F9C5D1" style="background:#F9C5D1" title="Rosa chicle"></button>
               <button class="swatch" data-color="#1a1a2e" style="background:#1a1a2e" title="Negro noche"></button>
-              <button class="swatch" data-color="#fdf5f7" style="background:#fdf5f7" title="Blanco marfil"></button>
+              <button class="swatch" data-color="#fdf5f7" style="background:#fdf5f7;border-color:#ddd" title="Blanco marfil"></button>
               <button class="swatch" data-color="#c0392b" style="background:#c0392b" title="Rojo pasión"></button>
               <button class="swatch" data-color="#6c3483" style="background:#6c3483" title="Púrpura místico"></button>
               <button class="swatch" data-color="#1e5c34" style="background:#1e5c34" title="Verde seta"></button>
               <button class="swatch" data-color="#e63946" style="background:#e63946" title="Rojo Lola"></button>
               <button class="swatch" data-color="#0d0020" style="background:#0d0020" title="Noche astral"></button>
               <button class="swatch" data-color="#1e3a5f" style="background:#1e3a5f" title="Azul City"></button>
+              <button class="swatch" data-color="#E91E8C" style="background:#E91E8C" title="Hot pink raxxeta"></button>
             </div>
           </div>
 
@@ -502,7 +719,7 @@
 
           <div class="custom__group">
             <label>5. Texto bordado <span style="font-weight:400;color:#aaa">(opcional)</span></label>
-            <input type="text" class="custom__text-input" id="textoInput" placeholder="Ej: Macarena, 🌙, Power" maxlength="20" />
+            <input type="text" class="custom__text-input" id="textoInput" placeholder="Ej: Macarena, 🌙, Power, Raxxeta" maxlength="20" />
             <span class="custom__char-count"><span id="charCount">0</span>/20</span>
           </div>
 
@@ -520,10 +737,7 @@
 
           <div class="custom__summary">
             <div class="sum-row"><span>Modelo</span><strong id="sumModelo">Clásico</strong></div>
-            <div class="sum-row">
-              <span>Color</span>
-              <span class="sum-color-wrap"><span id="sumColor" class="sum-color-dot" style="background:#F9C5D1"></span></span>
-            </div>
+            <div class="sum-row"><span>Color</span><span class="sum-color-wrap"><span id="sumColor" class="sum-color-dot" style="background:#F9C5D1"></span></span></div>
             <div class="sum-row"><span>Tema</span><strong id="sumTema">Sin tema</strong></div>
             <div class="sum-row"><span>Talla</span><strong id="sumTalla">S</strong></div>
             <div class="sum-row sum-total"><span>Total</span><strong><span id="sumPrecio">18</span>€</strong></div>
@@ -541,7 +755,7 @@
       <div class="manifiesto__texto">
         <p>Pu$$y Eaterz nació porque estábamos hartas de ropa interior aburrida, incómoda y diseñada por alguien que nunca ha llevado un tanga.</p>
         <p>Aquí las tallas van de XS a XXL porque todos los cuerpos merecen encaje. Aquí el diseño lo hacemos entre todas. Aquí si quieres llevar a Haaland bordado en el culo, te lo bordamos sin preguntar.</p>
-        <p><strong>Somos canallas. Somos femeninas. Somos libres. Somos Pu$$y Eaterz.</strong></p>
+        <p><strong>Somos raxxetas. Somos femeninas. Somos libres. Somos Pu$$y Eaterz.</strong></p>
       </div>
       <div class="manifiesto__values">
         <div class="value-item"><span>♀</span><p>Perspectiva de género en cada costura</p></div>
@@ -556,7 +770,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <p class="footer__logo">PU$$Y EATERZ</p>
-      <p class="footer__copy">© 2026 Pu$$y Eaterz — Hecho con rabia, amor y encaje.</p>
+      <p class="footer__copy">© 2026 Pu$$y Eaterz — Hecho con rabia, amor y encaje. Raxxeta forever.</p>
       <div class="footer__links">
         <a href="#">Instagram</a>
         <a href="#">TikTok</a>
