@@ -195,11 +195,60 @@
       .back-link { display: none; }
       .no-print { display: none; }
     }
+
+    .btn-pdf {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      background: #c0392b;
+      color: #fff;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: .75rem 2rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .15s, transform .15s;
+      box-shadow: 0 4px 16px rgba(192,57,43,0.3);
+    }
+    .btn-pdf:hover { background: #96281b; transform: translateY(-2px); }
+    .btn-pdf:active { transform: translateY(0); }
+    .btn-pdf:disabled { opacity: .6; cursor: wait; }
+
+    .pdf-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(253,245,247,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(192,57,43,0.15);
+      padding: .75rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .pdf-bar p {
+      margin: 0;
+      font-size: .88rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
 
-  <a href="index.html" class="back-link no-print">← Volver a PU$$Y EATERZ</a>
+  <!-- BARRA DESCARGA PDF -->
+  <div class="pdf-bar no-print">
+    <p>📄 <strong>Guía Comer Coños</strong> — PU$$Y EATERZ · Edición Raxxeta 2026</p>
+    <button class="btn-pdf" id="btnDescargar" onclick="descargarPDF()">
+      ⬇ Descargar PDF gratis
+    </button>
+  </div>
+
+  <a href="index.html" class="back-link no-print" style="margin-top:1.5rem; display:inline-block;">← Volver a PU$$Y EATERZ</a>
 
   <div class="cover">
     <p class="cover__logo">PU$$Y EATERZ</p>
@@ -538,6 +587,56 @@
     <p style="margin-top:.5rem">Esta guía es educativa. No sustituye atención médica o terapia sexual profesional.</p>
     <p style="margin-top:.5rem; color: #c0392b; font-weight: 700">© 2026 PU$$Y EATERZ — Raxxeta forever ✦</p>
   </div>
+
+  <!-- html2pdf.js — convierte el HTML a PDF en el navegador -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    function descargarPDF() {
+      const btn = document.getElementById('btnDescargar');
+      btn.disabled = true;
+      btn.textContent = '⏳ Generando PDF...';
+
+      // Clonar el contenido para no tocar el DOM original
+      const contenido = document.body.cloneNode(true);
+
+      // Eliminar elementos no-print del clon
+      contenido.querySelectorAll('.no-print').forEach(el => el.remove());
+
+      const opciones = {
+        margin:      [12, 14, 12, 14],
+        filename:    'guia-comer-conos-pussy-eaterz.pdf',
+        image:       { type: 'jpeg', quality: 0.95 },
+        html2canvas: {
+          scale: 2,
+          useCORS: true,
+          logging: false,
+          letterRendering: true,
+        },
+        jsPDF: {
+          unit: 'mm',
+          format: 'a4',
+          orientation: 'portrait',
+        },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+      };
+
+      html2pdf()
+        .set(opciones)
+        .from(contenido)
+        .save()
+        .then(() => {
+          btn.disabled = false;
+          btn.innerHTML = '✅ Descargado';
+          setTimeout(() => {
+            btn.innerHTML = '⬇ Descargar PDF gratis';
+          }, 3000);
+        })
+        .catch(() => {
+          btn.disabled = false;
+          btn.innerHTML = '⬇ Descargar PDF gratis';
+        });
+    }
+  </script>
 
 </body>
 </html>
